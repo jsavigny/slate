@@ -107,5 +107,5 @@ This endpoint retrieves all comments.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-tag | 'Semua' | The tag to filter the comments.
-page | - | Pagination, each page will return 10 comments.
+`tag` | 'Semua' | The tag to filter the comments.
+`page` | - | Pagination, each page will return 10 comments.

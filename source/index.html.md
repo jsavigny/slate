@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - topics
   - comments
+  - tags
   - errors
 
 search: true
