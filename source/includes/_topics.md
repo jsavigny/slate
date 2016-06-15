@@ -209,17 +209,16 @@ Parameter | Description
 > Sample Request
 
 ```shell
-curl "apikomunitas.local.host:5000/v1/topics/create"
+curl -X POST "apikomunitas.local.host:5000/v1/topics/"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
                       "tags_a":["Test","zxc"],
                       "description":"The destroyer of **THE WORLD**
-
               }
             }'
       -H "Content-Type: application/json" 
-      -u "user_id:API Token"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
 > Success Response
