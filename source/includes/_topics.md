@@ -410,7 +410,8 @@ Parameter |        |Description
  | | "S" => "Spam",
 
 
- ## Unvote a topic
+
+## Unvote a topic
 
 > Sample Request
 
