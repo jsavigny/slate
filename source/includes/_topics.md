@@ -241,7 +241,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
               "topic":{
                       "title":"Now I am become death",
                       "tags_a":["Test","zxc"],
-                      "description":"The destroyer of **THE WORLD**
+                      "description":"The destroyer of **THE WORLD**" 
               }
             }'
       -H "Content-Type: application/json" 
