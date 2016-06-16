@@ -4,9 +4,15 @@
 
 > Sample Request
 
+```ruby
+GET /v1/topics?filter=recent?page=1
+Host: apikomunitas.local.host:5000
+```
+
 ```shell
 curl "http://apikomunitas.local.host:5000/v1/topics?filter=recent"
 ```
+
 
 > Sample Response
 
@@ -97,6 +103,11 @@ Parameter | Default | Description
 ## Get a Specific Topic
 
 > Sample Request
+
+```ruby
+GET /v1/topics/9
+Host: apikomunitas.local.host:5000
+```
 
 ```shell
 curl "http://apikomunitas.local.host:5000/v1/topics/9"
@@ -208,8 +219,24 @@ Parameter | Description
 
 > Sample Request
 
+```ruby
+POST /v1/topics
+Host: apikomunitas.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+  "topic":{
+          "title":"Now I am become death",
+          "tags_a":["Test","zxc"],
+          "description":"The destroyer of **THE WORLD**
+  }
+}
+```
+
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics/"
+curl -X POST "apikomunitas.local.host:5000/v1/topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -220,7 +247,6 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics/"
       -H "Content-Type: application/json" 
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
-
 > Success Response
 
 ```json

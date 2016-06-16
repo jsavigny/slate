@@ -4,6 +4,11 @@
 
 > Sample Request
 
+```ruby
+GET /v1/comments
+Host: apikomunitas.local.host:5000
+```
+
 ```shell
 curl "http://apikomunitas.local.host:5000/v1/comments"
 ```
