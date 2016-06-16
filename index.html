@@ -136,6 +136,9 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="sr">/v1/</span><span class="n">topics?filter</span><span class="o">=</span><span class="n">recent?page</span><span class="o">=</span><span class="mi">1</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">apikomunitas</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+</code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://apikomunitas.local.host:5000/v1/topics?filter=recent"</span>
 </code></pre>
 
@@ -247,6 +250,9 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="sr">/v1/</span><span class="n">topics</span><span class="o">/</span><span class="mi">9</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">apikomunitas</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+</code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://apikomunitas.local.host:5000/v1/topics/9"</span>
 </code></pre>
 
@@ -364,7 +370,19 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"apikomunitas.local.host:5000/v1/topics/"</span>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="sr">/v1/</span><span class="n">topics</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">apikomunitas</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"topic"</span><span class="p">:{</span><span class="w">
+          </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Now I am become death"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"tags_a"</span><span class="p">:[</span><span class="s2">"Test"</span><span class="p">,</span><span class="s2">"zxc"</span><span class="p">],</span><span class="w">
+          </span><span class="nt">"description"</span><span class="p">:</span><span class="err">"The</span><span class="w"> </span><span class="err">destroyer</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">**THE</span><span class="w"> </span><span class="err">WORLD**</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"apikomunitas.local.host:5000/v1/topics"</span>
         -d  <span class="s1">'{
               "topic":{
                       "title":"Now I am become death",
@@ -439,6 +457,9 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="sr">/v1/</span><span class="n">comments</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">apikomunitas</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+</code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://apikomunitas.local.host:5000/v1/comments"</span>
 </code></pre>
 
@@ -563,6 +584,9 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="sr">/v1/</span><span class="n">tags</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">apikomunitas</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+</code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://apikomunitas.local.host:5000/v1/tags"</span>
 </code></pre>
 
