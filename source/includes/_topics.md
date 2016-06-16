@@ -285,3 +285,126 @@ Parameter |        |Description
 `title` | required |Title of the topic
 `tags_a` | required |Tags of the topic
 `description` | required | Body/description of the topic
+
+## Upvote a topic
+
+> Sample Request
+
+```ruby
+POST /v1/topics/1/upvotes
+Host: apikomunitas.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "apikomunitas.local.host:5000/v1/topics/1/upvotes"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Upvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to upvote a topic.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://apikomunitas.local.host:5000/v1/topics/:id/upvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
+
+## Downvote a topic
+
+> Sample Request
+
+```ruby
+POST /v1/topics/1/downvotes
+Host: apikomunitas.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+  "reason":"O"
+}
+```
+
+```shell
+curl -X POST "apikomunitas.local.host:5000/v1/topics/1/downvotes"
+      -d '{ "reason":"O" }'
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Downvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Invalid Reason
+
+```json
+{
+  "status": "ERROR",
+  "message": "Invalid Reason"
+}
+```
+
+> Not Permitted
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Permitted to Downvote"
+}
+```
+
+This endpoint is used to downvote a topic.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://apikomunitas.local.host:5000/v1/topics/:id/downvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
+`reason` | required | reason for the downvote
+ | | "O" => "Off-topic",
+ | | "I" => "Incorrect",
+ | | "M" => "Me-too",
+ | | "T" => "Troll",
+ | | "S" => "Spam",
