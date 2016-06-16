@@ -403,11 +403,11 @@ Parameter |        |Description
 --------- | -------- |-----------
 `:id` | required |id of the topic
 `reason` | required | reason for the downvote
- | | "O" => "Off-topic",
- | | "I" => "Incorrect",
- | | "M" => "Me-too",
- | | "T" => "Troll",
- | | "S" => "Spam",
+  |  | "O" => "Off-topic"
+  |  | "A" => "Already Posted"
+  |  | "T" => "Poorly Tagged"
+  |  | "L" => "Poorly Titled"
+  |  | "S" => "Spam"
 
 
 
