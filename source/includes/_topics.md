@@ -230,7 +230,7 @@ Authorization: Basic user_id:api_token
   "topic":{
           "title":"Now I am become death",
           "tags_a":["Test","zxc"],
-          "description":"The destroyer of **THE WORLD**
+          "description":"The destroyer of **THE WORLD**"
   }
 }
 ```
@@ -408,3 +408,50 @@ Parameter |        |Description
  | | "M" => "Me-too",
  | | "T" => "Troll",
  | | "S" => "Spam",
+
+
+ ## Unvote a topic
+
+> Sample Request
+
+```ruby
+POST /v1/topics/1/unvotes
+Host: apikomunitas.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "apikomunitas.local.host:5000/v1/topics/1/unvotes"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Unvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to unvote (remove vote from) a topic.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://apikomunitas.local.host:5000/v1/topics/:id/unvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
