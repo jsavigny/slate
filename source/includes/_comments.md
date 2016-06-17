@@ -137,6 +137,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 }
 ```
 > Story Not Found Error response
+
 ```json
 {
   "status": "ERROR",
@@ -148,7 +149,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
   "message": "Story Not Found"
 }
 ```
-> Invalid Parent Comment response
+> Invalid Parent Comment Error response
 ```json
 {
   "status": "ERROR",
@@ -160,6 +161,20 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
   "message": "Invalid Parent Comment"
 }
 ```
+> Recently commented here Error response
+
+```json
+{
+  "status": "ERROR",
+  "comment": {
+    "id": null,
+    "story_id": null,
+    "parent_comment_id": null
+  },
+  "message": "You have already posted a comment here recently."
+}
+```
+
 > Authentication Error response
 
 ```json
