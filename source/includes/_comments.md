@@ -150,6 +150,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 }
 ```
 > Invalid Parent Comment Error response
+
 ```json
 {
   "status": "ERROR",
