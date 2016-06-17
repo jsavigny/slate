@@ -136,10 +136,10 @@
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">topics?filter</span><span class="o">=</span><span class="n">recent?page</span><span class="o">=</span><span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">topics?filter</span><span class="o">=</span><span class="n">recent</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">tag</span><span class="o">=</span><span class="no">Semua</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/topics?filter=recent"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/topics?filter=recent&amp;page=1&amp;tag=Semua"</span>
 </code></pre>
 
 <blockquote>
