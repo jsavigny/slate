@@ -141,11 +141,6 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 ```json
 {
   "status": "ERROR",
-  "comment": {
-    "id": null,
-    "story_id": null,
-    "parent_comment_id": null
-  },
   "message": "Story Not Found"
 }
 ```
@@ -154,11 +149,6 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 ```json
 {
   "status": "ERROR",
-  "comment": {
-    "id": null,
-    "story_id": null,
-    "parent_comment_id": null
-  },
   "message": "Invalid Parent Comment"
 }
 ```
@@ -167,11 +157,6 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 ```json
 {
   "status": "ERROR",
-  "comment": {
-    "id": null,
-    "story_id": null,
-    "parent_comment_id": null
-  },
   "message": "You have already posted a comment here recently."
 }
 ```
