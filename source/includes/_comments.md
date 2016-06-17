@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET /v1/comments
-Host: apikomunitas.local.host:5000
+GET komunitas/v1/comments
+Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://apikomunitas.local.host:5000/v1/comments"
+curl "http://api.local.host:5000/komunitas/v1/comments"
 ```
 
 > Sample Response
@@ -50,7 +50,7 @@ This endpoint retrieves all comments.
 
 ### HTTP Request
 
-`GET http://apikomunitas.local.host/v1/comments `
+`GET http://api.local.host/komunitas/v1/comments `
 
 ### Query Parameters
 
@@ -64,8 +64,8 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-POST /v1/comments
-Host: apikomunitas.local.host:5000
+POST komunitas/v1/comments
+Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
@@ -77,7 +77,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics"
+curl -X POST "api.local.host:5000/komunitas/v1/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1
@@ -113,7 +113,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics"
+curl -X POST "api.local.host:5000/komunitas/v1/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1,
@@ -176,7 +176,7 @@ This endpoint is used to create a comment, either by commenting a topic, or by r
 
 ### HTTP Request
 
-`POST http://apikomunitas.local.host:5000/v1/comments/`
+`POST http://api.local.host:5000/komunitas/v1/comments/`
 
 ### URL Parameters
 

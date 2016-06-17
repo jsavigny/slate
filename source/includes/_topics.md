@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET /v1/topics?filter=recent?page=1
-Host: apikomunitas.local.host:5000
+GET komunitas/v1/topics?filter=recent?page=1
+Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://apikomunitas.local.host:5000/v1/topics?filter=recent"
+curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent"
 ```
 
 
@@ -72,7 +72,7 @@ This endpoint retrieves all topics, sorted by trending or recency.
 
 ### HTTP Request
 
-`GET http://apikomunitas.local.host/v1/topics `
+`GET http://api.local.host:5000/komunitas/v1/topics `
 
 ### Query Parameters
 
@@ -87,12 +87,12 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET /v1/topics/1
-Host: apikomunitas.local.host:5000
+GET komunitas/v1/topics/1
+Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://apikomunitas.local.host:5000/v1/topics/1"
+curl "http://api.local.host:5000/komunitas/v1/topics/1"
 ```
 
 > Sample Response
@@ -148,7 +148,7 @@ This endpoint retrieves a specific detailed topic, with its comments (if exist).
 
 ### HTTP Request
 
-`GET http://apikomunitas.local.host:5000/v1/topics/:id`
+`GET http://api.local.host:5000/komunitas/v1/topics/:id`
 
 ### URL Parameters
 
@@ -161,8 +161,8 @@ Parameter | Description
 > Sample Request
 
 ```ruby
-POST /v1/topics
-Host: apikomunitas.local.host:5000
+POST komunitas/v1/topics
+Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
@@ -177,7 +177,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics"
+curl -X POST "api.local.host:5000/komunitas/v1/topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -217,7 +217,7 @@ This endpoint is used to create topic.
 
 ### HTTP Request
 
-`POST http://apikomunitas.local.host:5000/v1/topics/`
+`POST http://api.local.host:5000/komunitas/v1/topics/`
 
 ### URL Parameters
 
@@ -232,13 +232,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST /v1/topics/1/upvotes
+POST komunitas/v1/topics/1/upvotes
 Host: apikomunitas.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics/1/upvotes"
+curl -X POST "api.local.host:5000/komunitas/v1/topics/1/upvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -265,7 +265,7 @@ This endpoint is used to upvote a topic.
 
 ### HTTP Request
 
-`POST http://apikomunitas.local.host:5000/v1/topics/:id/upvotes`
+`POST http://api.local.host:5000/komunitas/v1/topics/:id/upvotes`
 
 ### URL Parameters
 
@@ -278,8 +278,8 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST /v1/topics/1/downvotes
-Host: apikomunitas.local.host:5000
+POST komunitas/v1/topics/1/downvotes
+Host: api.local.host:5000:5000
 Authorization: Basic user_id:api_token
 ```
 
@@ -290,7 +290,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics/1/downvotes"
+curl -X POST "api.local.host:5000/komunitas/v1/topics/1/downvotes"
       -d '{ "reason":"O" }'
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
@@ -336,7 +336,7 @@ This endpoint is used to downvote a topic.
 
 ### HTTP Request
 
-`POST http://apikomunitas.local.host:5000/v1/topics/:id/downvotes`
+`POST http://api.local.host:5000/komunitas/v1/topics/:id/downvotes`
 
 ### URL Parameters
 
@@ -357,13 +357,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST /v1/topics/1/unvotes
-Host: apikomunitas.local.host:5000
+POST komunitas/v1/topics/1/unvotes
+Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "apikomunitas.local.host:5000/v1/topics/1/unvotes"
+curl -X POST "api.local.host:5000/komunitas/v1/topics/1/unvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -390,7 +390,7 @@ This endpoint is used to unvote (remove vote from) a topic.
 
 ### HTTP Request
 
-`POST http://apikomunitas.local.host:5000/v1/topics/:id/unvotes`
+`POST http://api.local.host:5000/komunitas/v1/topics/:id/unvotes`
 
 ### URL Parameters
 
