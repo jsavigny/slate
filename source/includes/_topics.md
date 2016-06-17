@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/v1/topics?filter=recent?page=1
+GET komunitas/v1/topics?filter=recent&page=1&tag=Semua
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent"
+curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Semua"
 ```
 
 
