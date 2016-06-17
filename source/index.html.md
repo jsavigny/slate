@@ -12,7 +12,6 @@ includes:
   - topics
   - comments
   - tags
-  - errors
 
 search: true
 ---

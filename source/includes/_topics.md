@@ -21,67 +21,49 @@ curl "http://apikomunitas.local.host:5000/v1/topics?filter=recent"
   "status": "OK",
   "topics": [
     {
-      "id": 43,
-      "short_id": "q1uj1y",
+      "id": 1,
+      "short_id": "ez0iyc",
       "title": "Now I am become death",
-      "created_at": "2016-06-13T10:54:35.000+07:00",
-      "updated_at": "2016-06-13T10:54:35.000+07:00",
-      "upvotes": 1,
+      "created_at": "2016-06-15T19:35:14.000+07:00",
+      "updated_at": "2016-06-15T19:35:14.000+07:00",
+      "upvotes": 2,
       "downvotes": 0,
       "comments_count": 0,
       "user": {
-        "username": "julio",
-        "id": 1
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 4
       },
       "tags": [
         {
-          "name": "Test",
-          "description": "Test"
+          "name": "Video",
+          "description": "Video"
         }
       ]
     },
     {
-      "id": 42,
-      "short_id": "u9mcgd",
-      "title": "Mama, Just Killed a MAN 2 Tag",
-      "created_at": "2016-06-13T10:46:08.000+07:00",
-      "updated_at": "2016-06-13T10:46:08.000+07:00",
+      "id": 4,
+      "short_id": "jwhhum",
+      "title": "Ryu ga waga",
+      "created_at": "2016-06-17T10:44:35.000+07:00",
+      "updated_at": "2016-06-17T10:44:35.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "comments_count": 0,
       "user": {
-        "username": "julio",
-        "id": 1
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 4
       },
       "tags": [
         {
-          "name": "Test",
-          "description": "Test"
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "short_id": "enam71",
-      "title": "inocchi",
-      "created_at": "2016-06-10T12:01:18.000+07:00",
-      "updated_at": "2016-06-10T12:01:18.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "comments_count": 0,
-      "user": {
-        "username": "julio",
-        "id": 1
-      },
-      "tags": [
-        {
-          "name": "Test",
-          "description": "Test"
+          "name": "Video",
+          "description": "Video"
         }
       ]
     }
   ],
-  "message": "Recent Topics"
+  "message": "Trending Topics"
 }
 ```
 
@@ -105,12 +87,12 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET /v1/topics/9
+GET /v1/topics/1
 Host: apikomunitas.local.host:5000
 ```
 
 ```shell
-curl "http://apikomunitas.local.host:5000/v1/topics/9"
+curl "http://apikomunitas.local.host:5000/v1/topics/1"
 ```
 
 > Sample Response
@@ -119,82 +101,41 @@ curl "http://apikomunitas.local.host:5000/v1/topics/9"
 {
   "status": "OK",
   "topic": {
-    "id": 9,
-    "short_id": "36fu9q",
-    "title": "Mama, Just Killed a MAN",
-    "description": "Put a **GUN** against his head",
-    "markeddown_description": "<p>Put a <strong>GUN</strong> against his head</p>\n",
-    "created_at": "2016-06-09T12:51:14.000+07:00",
-    "updated_at": "2016-06-09T12:51:14.000+07:00",
-    "upvotes": 1,
+    "id": 1,
+    "short_id": "ez0iyc",
+    "title": "Now I am become death",
+    "description": "The destroyer of THE WORLD",
+    "markeddown_description": "<p>The destroyer of THE WORLD</p>\n",
+    "created_at": "2016-06-15T19:35:14.000+07:00",
+    "updated_at": "2016-06-15T19:35:14.000+07:00",
+    "upvotes": 2,
     "downvotes": 0,
-    "comments_count": 4,
+    "comments_count": 0,
     "user": {
-      "username": "julio",
-      "id": 1
+      "username": "jsavigny",
+      "id": 1,
+      "karma": 4
     },
     "tags": [
       {
-        "name": "Test",
-        "description": "Test"
+        "name": "Video",
+        "description": "Video"
       }
     ]
   },
   "comments": [
     {
-      "id": 1,
-      "short_id": "fpx9rg",
-      "comment": "Pulled my trigger now he's dead!",
-      "markeddown_comment": "<p>Pulled my trigger now he&rsquo;s dead!</p>\n",
-      "created_at": "2016-06-09T14:20:02.000+07:00",
-      "updated_at": "2016-06-09T14:20:02.000+07:00",
+      "id": 17,
+      "short_id": "jdzxuy",
+      "comment": "ea",
+      "markeddown_comment": "<p>ea</p>\n",
+      "created_at": "2016-06-17T10:56:35.000+07:00",
+      "updated_at": "2016-06-17T10:56:35.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "user": {
-        "username": "julio",
-        "id": 1
-      }
-    },
-    {
-      "id": 2,
-      "short_id": "wdqric",
-      "comment": "Mamaaaa.... uuuuuu....",
-      "markeddown_comment": "<p>Mamaaaa&hellip;. uuuuuu&hellip;.</p>\n",
-      "created_at": "2016-06-13T14:35:43.000+07:00",
-      "updated_at": "2016-06-13T14:35:43.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "user": {
-        "username": "julio",
-        "id": 1
-      }
-    },
-    {
-      "id": 3,
-      "short_id": "ee6sgk",
-      "comment": "Didn't mean to make you cry~",
-      "markeddown_comment": "<p>Didn&rsquo;t mean to make you cry~</p>\n",
-      "created_at": "2016-06-13T14:35:59.000+07:00",
-      "updated_at": "2016-06-13T14:35:59.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "user": {
-        "username": "julio",
-        "id": 1
-      }
-    },
-    {
-      "id": 4,
-      "short_id": "sbrlly",
-      "comment": "if i'm not back again this time tomorrow, carry on, **carry on**",
-      "markeddown_comment": "<p>if i&rsquo;m not back again this time tomorrow, carry on, <strong>carry on</strong></p>\n",
-      "created_at": "2016-06-13T14:40:59.000+07:00",
-      "updated_at": "2016-06-13T14:40:59.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "user": {
-        "username": "julio",
-        "id": 1
+        "username": "juliosavigny",
+        "id": 2
       }
     }
   ],
@@ -229,7 +170,7 @@ Authorization: Basic user_id:api_token
 {
   "topic":{
           "title":"Now I am become death",
-          "tags_a":["Test","zxc"],
+          "tags_a":["Video","Gadget"],
           "description":"The destroyer of **THE WORLD**"
   }
 }
@@ -240,7 +181,7 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
-                      "tags_a":["Test","zxc"],
+                      "tags_a":["Video","Gadget"],
                       "description":"The destroyer of **THE WORLD**" 
               }
             }'
@@ -253,8 +194,8 @@ curl -X POST "apikomunitas.local.host:5000/v1/topics"
 {
   "status": "OK",
   "topic_detail": {
-    "id": 43,
-    "short_id": "q1uj1y",
+    "id": 8,
+    "short_id": "y6msra",
     "title_as_url": "now_i_am_become_death"
   },
   "message": "Topic Created"
