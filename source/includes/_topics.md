@@ -86,7 +86,7 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
       ]
     },
 
-  ]
+  ],
   "message": "Trending Topics"
 }
 ```
