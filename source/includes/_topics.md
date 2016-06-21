@@ -63,12 +63,36 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
       ]
     }
   ],
+  "sticky_topics": [   
+    {
+      "id": 3,
+      "short_id": "zxn9vq",
+      "title": "This is a sticky story, which is very important",
+      "created_at": "2016-06-15T19:35:14.000+07:00",
+      "updated_at": "2016-06-15T19:35:14.000+07:00",
+      "upvotes": 10,
+      "downvotes": 0,
+      "comments_count": 0,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 4
+      },
+      "tags": [
+        {
+          "name": "Video",
+          "description": "Video"
+        }
+      ]
+    },
+
+  ]
   "message": "Trending Topics"
 }
 ```
 
 
-This endpoint retrieves all topics, sorted by trending or recency.
+This endpoint retrieves all topics, sticky and non sticky alike, sorted by trending or recency.
 
 ### HTTP Request
 
@@ -182,10 +206,10 @@ curl -X POST "api.local.host:5000/komunitas/v1/topics"
               "topic":{
                       "title":"Now I am become death",
                       "tags_a":["Video","Gadget"],
-                      "description":"The destroyer of **THE WORLD**" 
+                      "description":"The destroyer of **THE WORLD**"
               }
             }'
-      -H "Content-Type: application/json" 
+      -H "Content-Type: application/json"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
