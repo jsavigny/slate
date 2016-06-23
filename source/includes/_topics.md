@@ -126,40 +126,59 @@ curl "http://api.local.host:5000/komunitas/v1/topics/1"
   "status": "OK",
   "topic": {
     "id": 1,
-    "short_id": "ez0iyc",
-    "title": "Now I am become death",
-    "description": "The destroyer of THE WORLD",
-    "markeddown_description": "<p>The destroyer of THE WORLD</p>\n",
-    "created_at": "2016-06-15T19:35:14.000+07:00",
-    "updated_at": "2016-06-15T19:35:14.000+07:00",
-    "upvotes": 2,
+    "title": "Yea",
+    "description": "Instagram",
+    "markeddown_description": "<p>Instagram</p>\n",
+    "created_at": "2016-06-23T09:51:37.000+07:00",
+    "updated_at": "2016-06-23T09:51:37.000+07:00",
+    "upvotes": 1,
     "downvotes": 0,
-    "comments_count": 0,
+    "comments_count": 2,
     "user": {
       "username": "jsavigny",
       "id": 1,
-      "karma": 4
+      "karma": 0
     },
     "tags": [
       {
-        "name": "Video",
-        "description": "Video"
+        "name": "Komputer",
+        "description": "Magic Box"
+      },
+      {
+        "name": "Kamera",
+        "description": "Double tap to love"
       }
     ]
   },
   "comments": [
     {
-      "id": 17,
-      "short_id": "jdzxuy",
-      "comment": "ea",
-      "markeddown_comment": "<p>ea</p>\n",
-      "created_at": "2016-06-17T10:56:35.000+07:00",
-      "updated_at": "2016-06-17T10:56:35.000+07:00",
+      "id": 2,
+      "comment": "Jelek sekarang logonya",
+      "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
+      "created_at": "2016-06-23T09:51:45.000+07:00",
+      "updated_at": "2016-06-23T09:51:45.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
+      "parent_comment_id": null,
       "user": {
-        "username": "juliosavigny",
-        "id": 2
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 0
+      }
+    },
+    {
+      "id": 3,
+      "comment": "iya sekarang jelek :(",
+      "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
+      "created_at": "2016-06-23T10:22:48.000+07:00",
+      "updated_at": "2016-06-23T10:22:48.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "parent_comment_id": 2,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 0
       }
     }
   ],
