@@ -18,30 +18,50 @@ curl "http://api.local.host:5000/komunitas/v1/comments"
 
 ```json
 {
-  "status": "OK",
-  "comments": [
-    {
-      "id": 17,
-      "comment": "ea",
-      "markeddown_comment": "<p>ea</p>\n",
-      "short_id": "jdzxuy",
-      "created_at": "2016-06-17T10:56:35.000+07:00",
-      "updated_at": "2016-06-17T10:56:35.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "parent_comment_id": null,
-      "user": {
-        "username": "juliosavigny",
-        "id": 2,
-        "karma": -1
+  {
+    "status": "OK",
+    "comments": [
+      {
+        "id": 3,
+        "comment": "iya sekarang jelek :(",
+        "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
+        "created_at": "2016-06-23T10:22:48.000+07:00",
+        "updated_at": "2016-06-23T10:22:48.000+07:00",
+        "upvotes": 1,
+        "downvotes": 0,
+        "parent_comment_id": 2,
+        "user": {
+          "username": "jsavigny",
+          "id": 1,
+          "karma": 0
+        },
+        "topic": {
+          "title": "Yea",
+          "id": 1
+        }
       },
-      "topic": {
-        "title": "Now I am become death",
-        "id": 1
+      {
+        "id": 2,
+        "comment": "Jelek sekarang logonya",
+        "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
+        "created_at": "2016-06-23T09:51:45.000+07:00",
+        "updated_at": "2016-06-23T09:51:45.000+07:00",
+        "upvotes": 1,
+        "downvotes": 0,
+        "parent_comment_id": null,
+        "user": {
+          "username": "jsavigny",
+          "id": 1,
+          "karma": 0
+        },
+        "topic": {
+          "title": "Yea",
+          "id": 1
+        }
       }
-    }
-  ],
-  "message": "Comments"
+    ],
+    "message": "Comments"
+  }
 }
 ```
 
@@ -82,7 +102,7 @@ curl -X POST "api.local.host:5000/komunitas/v1/topics"
                 "comment":"What?",
                 "story_id":1
              }'
-      -H "Content-Type: application/json" 
+      -H "Content-Type: application/json"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
@@ -119,11 +139,11 @@ curl -X POST "api.local.host:5000/komunitas/v1/topics"
                 "story_id":1,
                 "parent_comment_id":24
              }'
-      -H "Content-Type: application/json" 
+      -H "Content-Type: application/json"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
-> Success Response 
+> Success Response
 
 ```json
 {
