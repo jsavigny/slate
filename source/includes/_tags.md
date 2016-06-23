@@ -21,10 +21,12 @@ curl "http://api.local.host:5000/komunitas/v1/tags"
   "status": "OK",
   "tags": [
     {
+      "key": 1,
       "tag": "Test",
       "description": "Test"
     },
     {
+      "key": 2,
       "tag": "Test2",
       "description": "Test2x"
     }
