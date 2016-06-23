@@ -17,52 +17,52 @@ curl "http://api.local.host:5000/komunitas/v1/comments"
 
 
 ```json
+
 {
-  {
-    "status": "OK",
-    "comments": [
-      {
-        "id": 3,
-        "comment": "iya sekarang jelek :(",
-        "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
-        "created_at": "2016-06-23T10:22:48.000+07:00",
-        "updated_at": "2016-06-23T10:22:48.000+07:00",
-        "upvotes": 1,
-        "downvotes": 0,
-        "parent_comment_id": 2,
-        "user": {
-          "username": "jsavigny",
-          "id": 1,
-          "karma": 0
-        },
-        "topic": {
-          "title": "Yea",
-          "id": 1
-        }
+  "status": "OK",
+  "comments": [
+    {
+      "id": 3,
+      "comment": "iya sekarang jelek :(",
+      "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
+      "created_at": "2016-06-23T10:22:48.000+07:00",
+      "updated_at": "2016-06-23T10:22:48.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "parent_comment_id": 2,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 0
       },
-      {
-        "id": 2,
-        "comment": "Jelek sekarang logonya",
-        "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
-        "created_at": "2016-06-23T09:51:45.000+07:00",
-        "updated_at": "2016-06-23T09:51:45.000+07:00",
-        "upvotes": 1,
-        "downvotes": 0,
-        "parent_comment_id": null,
-        "user": {
-          "username": "jsavigny",
-          "id": 1,
-          "karma": 0
-        },
-        "topic": {
-          "title": "Yea",
-          "id": 1
-        }
+      "topic": {
+        "title": "Yea",
+        "id": 1
       }
-    ],
-    "message": "Comments"
-  }
+    },
+    {
+      "id": 2,
+      "comment": "Jelek sekarang logonya",
+      "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
+      "created_at": "2016-06-23T09:51:45.000+07:00",
+      "updated_at": "2016-06-23T09:51:45.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "parent_comment_id": null,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 0
+      },
+      "topic": {
+        "title": "Yea",
+        "id": 1
+      }
+    }
+  ],
+  "message": "Comments"
 }
+
 ```
 
 
