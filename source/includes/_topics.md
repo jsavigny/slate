@@ -276,7 +276,7 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/v1/topics/1/upvotes
-Host: apikomunitas.local.host:5000
+Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
@@ -322,7 +322,7 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/v1/topics/1/downvotes
-Host: api.local.host:5000:5000
+Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
