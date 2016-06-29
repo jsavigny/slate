@@ -22,7 +22,6 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
   "topics": [
     {
       "id": 1,
-      "short_id": "ez0iyc",
       "title": "Now I am become death",
       "created_at": "2016-06-15T19:35:14.000+07:00",
       "updated_at": "2016-06-15T19:35:14.000+07:00",
@@ -36,14 +35,13 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
       },
       "tags": [
         {
-          "name": "Video",
+          "tag": "Video",
           "description": "Video"
         }
       ]
     },
     {
       "id": 4,
-      "short_id": "jwhhum",
       "title": "Ryu ga waga",
       "created_at": "2016-06-17T10:44:35.000+07:00",
       "updated_at": "2016-06-17T10:44:35.000+07:00",
@@ -57,7 +55,7 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
       },
       "tags": [
         {
-          "name": "Video",
+          "tag": "Video",
           "description": "Video"
         }
       ]
@@ -66,7 +64,6 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
   "sticky_topics": [   
     {
       "id": 3,
-      "short_id": "zxn9vq",
       "title": "This is a sticky story, which is very important",
       "created_at": "2016-06-15T19:35:14.000+07:00",
       "updated_at": "2016-06-15T19:35:14.000+07:00",
@@ -80,7 +77,7 @@ curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Se
       },
       "tags": [
         {
-          "name": "Video",
+          "tag": "Video",
           "description": "Video"
         }
       ]
@@ -141,7 +138,7 @@ curl "http://api.local.host:5000/komunitas/v1/topics/1"
     },
     "tags": [
       {
-        "name": "Komputer",
+        "tag": "Komputer",
         "description": "Magic Box"
       },
       {

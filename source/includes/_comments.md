@@ -29,7 +29,6 @@ curl "http://api.local.host:5000/komunitas/v1/comments"
       "updated_at": "2016-06-23T10:22:48.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "parent_comment_id": 2,
       "user": {
         "username": "jsavigny",
         "id": 1,
@@ -48,7 +47,6 @@ curl "http://api.local.host:5000/komunitas/v1/comments"
       "updated_at": "2016-06-23T09:51:45.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "parent_comment_id": null,
       "user": {
         "username": "jsavigny",
         "id": 1,
@@ -128,7 +126,7 @@ curl -X POST "api.local.host:5000/komunitas/v1/topics"
     "comment":"What?",
     "story_id":1,
     "parent_comment_id":24
-    
+
 }
 ```
 
