@@ -5,7 +5,7 @@
 > Sample Request
 
 ```ruby
-POST komunitas/v1/tags
+GET komunitas/v1/tags
 Host: api.local.host:5000
 ```
 
