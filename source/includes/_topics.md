@@ -162,28 +162,22 @@ curl "http://api.local.host:5000/komunitas/v1/topics/1"
         "id": 1,
         "karma": 0
       }
-    },
-    {
-      "id": 3,
-      "comment": "iya sekarang jelek :(",
-      "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
-      "created_at": "2016-06-23T10:22:48.000+07:00",
-      "updated_at": "2016-06-23T10:22:48.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "parent_comment_id": 2,
-      "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 0
-      }
     }
   ],
   "message": "Topic details"
 }
 ```
 
-This endpoint retrieves a specific detailed topic, with its comments (if exist).
+> Not Found Response
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+This endpoint retrieves a specific detailed topic, with its level 0 comments (comment that does not have parent).
 
 
 ### HTTP Request
@@ -204,6 +198,7 @@ Parameter | Description
 POST komunitas/v1/topics
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
+Content-Type Application/JSON
 ```
 
 ```json

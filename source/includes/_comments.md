@@ -77,6 +77,84 @@ Parameter | Default | Description
 `tag` | 'Semua' | The tag to filter the comments.
 `page` | - | Pagination, each page will return 10 comments.
 
+## Get a Specific Comment
+
+> Sample Request
+
+```ruby
+GET komunitas/v1/comments/16
+Host: api.local.host:5000
+```
+
+```shell
+curl "http://api.local.host:5000/komunitas/v1/comments/16"
+```
+
+> Sample Response
+
+```json
+{
+  "status": "OK",
+  "comment": {
+    "id": 16,
+    "comment": "Soon I awaked, and there I was, veritably myself again",
+    "markeddown_comment": "<p>Soon I awaked, and there I was, veritably myself again</p>\n",
+    "created_at": "2016-07-01T08:13:03.000+07:00",
+    "updated_at": "2016-07-01T08:13:03.000+07:00",
+    "upvotes": 1,
+    "downvotes": 0,
+    "user": {
+      "username": "jsavigny",
+      "id": 1,
+      "karma": 1
+    },
+    "topic": {
+      "title": "Once upon a time, I dreamt I was a butterfly",
+      "id": 46
+    }
+  },
+  "child_comments": [
+    {
+      "id": 17,
+      "comment": "Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly, dreaming I am a man.",
+      "markeddown_comment": "<p>Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly, dreaming I am a man.</p>\n",
+      "created_at": "2016-07-01T08:13:13.000+07:00",
+      "updated_at": "2016-07-01T08:13:13.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 1
+      }
+    }
+  ],
+  "message": "Comment details"
+}
+```
+
+> Not Found Response
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+This endpoint retrieves a specific detailed comments, with its child comments (if exist).
+
+
+### HTTP Request
+
+`GET http://api.local.host:5000/komunitas/v1/comments/:id`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+`:id` | The ID of the comment to retrieve
+
 ## Create a comment
 
 > Sample Request
@@ -85,6 +163,7 @@ Parameter | Default | Description
 POST komunitas/v1/comments
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
+Content-Type Application/JSON
 ```
 
 ```json
