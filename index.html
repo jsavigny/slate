@@ -954,6 +954,221 @@
 </tr>
 </tbody></table>
 
+<h2 id="upvote-a-topic">Upvote a topic</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">upvotes</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/upvotes"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Upvote Success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to upvote a comment.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/upvotes</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:id</code></td>
+<td>required</td>
+<td>id of the comment</td>
+</tr>
+</tbody></table>
+
+<h2 id="downvote-a-topic">Downvote a topic</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">downvotes</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"reason"</span><span class="p">:</span><span class="s2">"O"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/downvotes"</span>
+      -d <span class="s1">'{ "reason":"O" }'</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Downvote Success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Invalid Reason</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid Reason"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Not Permitted</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Permitted to Downvote"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to downvote a comment.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/downvotes</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:id</code></td>
+<td>required</td>
+<td>id of the comment</td>
+</tr>
+<tr>
+<td><code class="prettyprint">reason</code></td>
+<td>required</td>
+<td>reason for the downvote</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&ldquo;O&rdquo; =&gt; &ldquo;Off-topic&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&ldquo;I&rdquo; =&gt; &ldquo;Incorrect&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&ldquo;M&rdquo; =&gt; &ldquo;Me-too&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&ldquo;T&rdquo; =&gt; &ldquo;Troll&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>&ldquo;S&rdquo; =&gt; &ldquo;Spam&rdquo;</td>
+</tr>
+</tbody></table>
+
+<h2 id="unvote-a-topic">Unvote a topic</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">unvotes</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/unvotes"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unvote Success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to unvote (remove vote from) a comment.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/unvotes</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:id</code></td>
+<td>required</td>
+<td>id of the comment</td>
+</tr>
+</tbody></table>
+
           <h1 id="tags">Tags</h1>
 
 <h2 id="get-all-tags">Get All Tags</h2>
