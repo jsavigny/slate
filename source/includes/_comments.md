@@ -282,3 +282,175 @@ Parameter |        |Description
 `comment` | required |The comment
 `story_id` | required | id of the story that you're commenting
 `parent_comment_id` | not required | id of the comment that you're replying to
+
+
+## Upvote a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/v1/comments/1/upvotes
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/v1/comments/1/upvotes"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Upvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to upvote a comment.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/v1/comments/:id/upvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the comment
+
+## Downvote a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/v1/comments/1/downvotes
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+  "reason":"O"
+}
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/v1/comments/1/downvotes"
+      -d '{ "reason":"O" }'
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Downvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Invalid Reason
+
+```json
+{
+  "status": "ERROR",
+  "message": "Invalid Reason"
+}
+```
+
+> Not Permitted
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Permitted to Downvote"
+}
+```
+
+This endpoint is used to downvote a comment.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/v1/comments/:id/downvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the comment
+`reason` | required | reason for the downvote
+ | | "O" => "Off-topic"
+ | | "I" => "Incorrect"
+ | | "M" => "Me-too"
+ | | "T" => "Troll"
+ | | "S" => "Spam"
+
+
+
+## Unvote a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/v1/comments/1/unvotes
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/v1/comments/1/unvotes"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Unvote Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to unvote (remove vote from) a comment.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/v1/comments/:id/unvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the comment
