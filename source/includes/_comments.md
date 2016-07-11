@@ -284,7 +284,7 @@ Parameter |        |Description
 `parent_comment_id` | not required | id of the comment that you're replying to
 
 
-## Upvote a topic
+## Upvote a comment
 
 > Sample Request
 
@@ -330,7 +330,7 @@ Parameter |        |Description
 --------- | -------- |-----------
 `:id` | required |id of the comment
 
-## Downvote a topic
+## Downvote a comment
 
 > Sample Request
 
@@ -409,7 +409,7 @@ Parameter |        |Description
 
 
 
-## Unvote a topic
+## Unvote a comment
 
 > Sample Request
 
