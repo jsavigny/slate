@@ -237,6 +237,15 @@ curl -X POST "api.local.host:5000/komunitas/v1/topics"
 }
 ```
 
+> No Parameter Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "No Topic Parameter"
+}
+```
+
 > Authentication Error
 
 ```json
@@ -261,6 +270,87 @@ Parameter |        |Description
 `title` | required |Title of the topic
 `tags_a` | required |Tags of the topic
 `description` | required | Body/description of the topic
+
+## Preview a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/v1/topics/preview
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+Content-Type Application/JSON
+```
+
+```json
+{
+  "topic":{
+          "title":"Now I am become death",
+          "tags_a":["Video","Gadget"],
+          "description":"The destroyer of **THE WORLD**"
+  }
+}
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/v1/topics"
+        -d  '{
+              "topic":{
+                      "title":"Now I am become death",
+                      "tags_a":["Video","Gadget"],
+                      "description":"The destroyer of **THE WORLD**"
+              }
+            }'
+      -H "Content-Type: application/json"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "topic_detail": {
+    "title": "Now I am become death",
+    "markeddown_description": "<p>The destroyer of <strong>THE WORLD</strong></p>\n"
+  },
+  "message": "Preview"
+}
+```
+
+> No Parameter Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "No Topic Parameter"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to preview a topic before creation.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/v1/topics/`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`title` | required |Title of the topic
+`tags_a` | required |Tags of the topic
+`description` | required | Body/description of the topic
+
 
 ## Upvote a topic
 
