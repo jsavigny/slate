@@ -385,6 +385,15 @@
 </span></code></pre>
 
 <blockquote>
+<p>No Parameter Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No Topic Parameter"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
 <p>Authentication Error</p>
 </blockquote>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -394,6 +403,100 @@
 </span></code></pre>
 
 <p>This endpoint is used to create topic.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">title</code></td>
+<td>required</td>
+<td>Title of the topic</td>
+</tr>
+<tr>
+<td><code class="prettyprint">tags_a</code></td>
+<td>required</td>
+<td>Tags of the topic</td>
+</tr>
+<tr>
+<td><code class="prettyprint">description</code></td>
+<td>required</td>
+<td>Body/description of the topic</td>
+</tr>
+</tbody></table>
+
+<h2 id="preview-a-topic">Preview a topic</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="n">preview</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+<span class="no">Content</span><span class="o">-</span><span class="no">Type</span> <span class="no">Application</span><span class="o">/</span><span class="no">JSON</span>
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"topic"</span><span class="p">:{</span><span class="w">
+          </span><span class="nt">"title"</span><span class="p">:</span><span class="s2">"Now I am become death"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"tags_a"</span><span class="p">:[</span><span class="s2">"Video"</span><span class="p">,</span><span class="s2">"Gadget"</span><span class="p">],</span><span class="w">
+          </span><span class="nt">"description"</span><span class="p">:</span><span class="s2">"The destroyer of **THE WORLD**"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics"</span>
+        -d  <span class="s1">'{
+              "topic":{
+                      "title":"Now I am become death",
+                      "tags_a":["Video","Gadget"],
+                      "description":"The destroyer of **THE WORLD**"
+              }
+            }'</span>
+      -H <span class="s2">"Content-Type: application/json"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"topic_detail"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Now I am become death"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"markeddown_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;The destroyer of &lt;strong&gt;THE WORLD&lt;/strong&gt;&lt;/p&gt;\n"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Preview"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>No Parameter Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No Topic Parameter"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to preview a topic before creation.
 <aside class="notice"> Requires Authentication </aside></p>
 
 <h3 id="http-request">HTTP Request</h3>
