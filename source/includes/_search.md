@@ -1,6 +1,6 @@
-# Tags
+# Search
 
-## Get All Tags
+## Search topics/comments
 
 > Sample Request
 
