@@ -12,6 +12,7 @@ includes:
   - topics
   - comments
   - tags
+  - search
 
 search: true
 ---
@@ -28,7 +29,3 @@ Komunitas Bukalapak uses combination of user_id and API token to allow access fo
 `curl -u user_id:token`
 
 You can get your user_id and API token after you login [here](http://bukalapak.github.io/api/#authentication).
-
-
-
-
