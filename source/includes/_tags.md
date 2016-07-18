@@ -10,7 +10,7 @@ Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/v1/tags"
+curl "http://api.local.host:5000/komunitas//tags"
 ```
 
 > Sample Response
@@ -40,4 +40,4 @@ This endpoint retrieves all tags.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas/v1/tags `
+`GET http://api.local.host/komunitas//tags `

@@ -10,7 +10,7 @@ Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/v1/topics?filter=recent&page=1&tag=Semua"
+curl "http://api.local.host:5000/komunitas//topics?filter=recent&page=1&tag=Semua"
 ```
 
 
@@ -93,7 +93,7 @@ This endpoint retrieves all topics, sticky and non sticky alike, sorted by trend
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas/v1/topics `
+`GET http://api.local.host:5000/komunitas//topics `
 
 ### Query Parameters
 
@@ -113,7 +113,7 @@ Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/v1/topics/1"
+curl "http://api.local.host:5000/komunitas//topics/1"
 ```
 
 > Sample Response
@@ -182,7 +182,7 @@ This endpoint retrieves a specific detailed topic, with its level 0 comments (co
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas/v1/topics/:id`
+`GET http://api.local.host:5000/komunitas//topics/:id`
 
 ### URL Parameters
 
@@ -212,7 +212,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/v1/topics"
+curl -X POST "api.local.host:5000/komunitas//topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -261,7 +261,7 @@ This endpoint is used to create topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/v1/topics/`
+`POST http://api.local.host:5000/komunitas//topics/`
 
 ### URL Parameters
 
@@ -293,7 +293,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/v1/topics"
+curl -X POST "api.local.host:5000/komunitas//topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -341,7 +341,7 @@ This endpoint is used to preview a topic before creation.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/v1/topics/`
+`POST http://api.local.host:5000/komunitas//topics/`
 
 ### URL Parameters
 
@@ -363,7 +363,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/v1/topics/1/upvotes"
+curl -X POST "api.local.host:5000/komunitas//topics/1/upvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -390,7 +390,7 @@ This endpoint is used to upvote a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/v1/topics/:id/upvotes`
+`POST http://api.local.host:5000/komunitas//topics/:id/upvotes`
 
 ### URL Parameters
 
@@ -415,7 +415,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/v1/topics/1/downvotes"
+curl -X POST "api.local.host:5000/komunitas//topics/1/downvotes"
       -d '{ "reason":"O" }'
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
@@ -461,7 +461,7 @@ This endpoint is used to downvote a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/v1/topics/:id/downvotes`
+`POST http://api.local.host:5000/komunitas//topics/:id/downvotes`
 
 ### URL Parameters
 
@@ -488,7 +488,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/v1/topics/1/unvotes"
+curl -X POST "api.local.host:5000/komunitas//topics/1/unvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -515,7 +515,7 @@ This endpoint is used to unvote (remove vote from) a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/v1/topics/:id/unvotes`
+`POST http://api.local.host:5000/komunitas//topics/:id/unvotes`
 
 ### URL Parameters
 
