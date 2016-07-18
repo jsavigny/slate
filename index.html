@@ -139,7 +139,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">topics?filter</span><span class="o">=</span><span class="n">recent</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">tag</span><span class="o">=</span><span class="no">Semua</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/topics?filter=recent&amp;page=1&amp;tag=Semua"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//topics?filter=recent&amp;page=1&amp;tag=Semua"</span>
 </code></pre>
 
 <blockquote>
@@ -220,7 +220,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/v1/topics</code></p>
+<p><code class="prettyprint">GET http://api.local.host:5000/komunitas//topics</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -256,7 +256,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/topics/1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//topics/1"</span>
 </code></pre>
 
 <blockquote>
@@ -324,7 +324,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/v1/topics/:id</code></p>
+<p><code class="prettyprint">GET http://api.local.host:5000/komunitas//topics/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -358,7 +358,7 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics"</span>
         -d  <span class="s1">'{
               "topic":{
                       "title":"Now I am become death",
@@ -407,7 +407,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//topics/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -453,7 +453,7 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics"</span>
         -d  <span class="s1">'{
               "topic":{
                       "title":"Now I am become death",
@@ -501,7 +501,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//topics/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -538,7 +538,7 @@
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics/1/upvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics/1/upvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -565,7 +565,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/:id/upvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//topics/:id/upvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -596,7 +596,7 @@
   </span><span class="nt">"reason"</span><span class="p">:</span><span class="s2">"O"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics/1/downvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics/1/downvotes"</span>
       -d <span class="s1">'{ "reason":"O" }'</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
@@ -642,7 +642,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/:id/downvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//topics/:id/downvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -699,7 +699,7 @@
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics/1/unvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics/1/unvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -726,7 +726,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/topics/:id/unvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//topics/:id/unvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -754,7 +754,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">comments</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/comments"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//comments"</span>
 </code></pre>
 
 <blockquote>
@@ -810,7 +810,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host/komunitas/v1/comments</code></p>
+<p><code class="prettyprint">GET http://api.local.host/komunitas//comments</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -841,7 +841,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">16</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/comments/16"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//comments/16"</span>
 </code></pre>
 
 <blockquote>
@@ -900,7 +900,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/v1/comments/:id</code></p>
+<p><code class="prettyprint">GET http://api.local.host:5000/komunitas//comments/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -931,7 +931,7 @@
     </span><span class="nt">"story_id"</span><span class="p">:</span><span class="mi">1</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics"</span>
         -d  <span class="s1">'{
                 "comment":"What?",
                 "story_id":1
@@ -964,7 +964,7 @@
 
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//topics"</span>
         -d  <span class="s1">'{
                 "comment":"What?",
                 "story_id":1,
@@ -1029,7 +1029,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//comments/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1066,7 +1066,7 @@
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/upvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//comments/1/upvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1093,7 +1093,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/upvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//comments/:id/upvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1124,7 +1124,7 @@
   </span><span class="nt">"reason"</span><span class="p">:</span><span class="s2">"O"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/downvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//comments/1/downvotes"</span>
       -d <span class="s1">'{ "reason":"O" }'</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
@@ -1170,7 +1170,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/downvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//comments/:id/downvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1227,7 +1227,7 @@
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/v1/comments/1/unvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas//comments/1/unvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1254,7 +1254,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/v1/comments/:id/unvotes</code></p>
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas//comments/:id/unvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1282,7 +1282,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">tags</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/tags"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//tags"</span>
 </code></pre>
 
 <blockquote>
@@ -1310,7 +1310,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host/komunitas/v1/tags</code></p>
+<p><code class="prettyprint">GET http://api.local.host/komunitas//tags</code></p>
 
           <h1 id="search">Search</h1>
 
@@ -1322,7 +1322,7 @@
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">v1</span><span class="o">/</span><span class="n">search?forum_search</span><span class="p">[</span><span class="n">q</span><span class="p">]</span><span class="o">=</span><span class="n">tes</span><span class="o">&amp;</span><span class="n">forum_search</span><span class="p">[</span><span class="n">what</span><span class="p">]</span><span class="o">=</span><span class="n">all</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/v1/search?forum_search[q]=death&amp;forum_search[what]=all&amp;page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas//search?forum_search[q]=death&amp;forum_search[what]=all&amp;page=1"</span>
 </code></pre>
 
 <blockquote>
@@ -1432,7 +1432,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host/komunitas/v1/search</code></p>
+<p><code class="prettyprint">GET http://api.local.host/komunitas//search</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
