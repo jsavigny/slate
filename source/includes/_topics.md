@@ -21,70 +21,209 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
   "status": "OK",
   "topics": [
     {
-      "id": 1,
-      "title": "Now I am become death",
-      "created_at": "2016-06-15T19:35:14.000+07:00",
-      "updated_at": "2016-06-15T19:35:14.000+07:00",
-      "upvotes": 2,
+      "id": 62,
+      "title": "Panjang",
+      "created_at": "2016-07-15T11:14:45.000+07:00",
+      "updated_at": "2016-07-15T11:14:45.000+07:00",
+      "upvotes": 1,
       "downvotes": 0,
-      "comments_count": 0,
+      "vote": null,
+      "comments_count": 23,
+      "is_sticky": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
+        "username": "rahmanadianto",
+        "id": 3,
         "karma": 4
       },
       "tags": [
         {
-          "tag": "Video",
-          "description": "Video"
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
         }
       ]
     },
     {
-      "id": 4,
-      "title": "Ryu ga waga",
-      "created_at": "2016-06-17T10:44:35.000+07:00",
-      "updated_at": "2016-06-17T10:44:35.000+07:00",
+      "id": 61,
+      "title": "Tes Markdown",
+      "created_at": "2016-07-12T19:41:43.000+07:00",
+      "updated_at": "2016-07-12T19:43:42.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "comments_count": 0,
+      "vote": null,
+      "comments_count": 40,
+      "is_sticky": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
+        "username": "juliosavigny",
+        "id": 2,
+        "karma": 0
+      },
+      "tags": [
+        {
+          "tag": "Rileks",
+          "description": "enjoy aja"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Aaa",
+      "created_at": "2016-07-12T19:24:19.000+07:00",
+      "updated_at": "2016-07-12T19:24:19.000+07:00",
+      "upvotes": 2,
+      "downvotes": 0,
+      "vote": 1,
+      "comments_count": 24,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 4
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Now I am become death",
+      "created_at": "2016-07-12T19:20:23.000+07:00",
+      "updated_at": "2016-07-12T19:20:23.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 2,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
         "karma": 4
       },
       "tags": [
         {
           "tag": "Video",
-          "description": "Video"
+          "description": "Bukan XXX"
+        },
+        {
+          "tag": "Gadget",
+          "description": "Inspect-her gadget!"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Ini bergambar loh",
+      "created_at": "2016-07-12T19:06:21.000+07:00",
+      "updated_at": "2016-07-12T19:06:21.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 1,
+      "is_sticky": false,
+      "user": {
+        "username": "juliosavigny",
+        "id": 2,
+        "karma": 0
+      },
+      "tags": [
+        {
+          "tag": "Kamera",
+          "description": "Double tap to love"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Topik Test Rahmanx",
+      "created_at": "2016-07-12T18:52:09.000+07:00",
+      "updated_at": "2016-07-12T18:52:09.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 2,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 4
+      },
+      "tags": [
+        {
+          "tag": "Video",
+          "description": "Bukan XXX"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Topik Test EUY",
+      "created_at": "2016-07-12T18:50:31.000+07:00",
+      "updated_at": "2016-07-12T18:50:31.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 4
+      },
+      "tags": [
+        {
+          "tag": "Video",
+          "description": "Bukan XXX"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": "aku",
+      "created_at": "2016-07-12T18:00:42.000+07:00",
+      "updated_at": "2016-07-12T18:00:42.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 1,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 4
+      },
+      "tags": [
+        {
+          "tag": "Rileks",
+          "description": "enjoy aja"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Topik 3",
+      "created_at": "2016-06-29T10:54:32.000+07:00",
+      "updated_at": "2016-06-29T10:56:48.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "comments_count": 0,
+      "is_sticky": true,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Gadget",
+          "description": "Inspect-her gadget!"
         }
       ]
     }
   ],
-  "sticky_topics": [   
-    {
-      "id": 3,
-      "title": "This is a sticky story, which is very important",
-      "created_at": "2016-06-15T19:35:14.000+07:00",
-      "updated_at": "2016-06-15T19:35:14.000+07:00",
-      "upvotes": 10,
-      "downvotes": 0,
-      "comments_count": 0,
-      "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 4
-      },
-      "tags": [
-        {
-          "tag": "Video",
-          "description": "Video"
-        }
-      ]
-    },
-
-  ],
-  "message": "Trending Topics"
+  "message": "Recent Topics"
 }
 ```
 
