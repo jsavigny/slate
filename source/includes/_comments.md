@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/v1/comments
+GET komunitas/comments
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//comments"
+curl "http://api.local.host:5000/komunitas/comments"
 ```
 
 > Sample Response
@@ -68,26 +68,26 @@ This endpoint retrieves all comments.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas//comments `
+`GET http://api.local.host/komunitas/comments `
 
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
 `tag` | 'Semua' | The tag to filter the comments.
-`page` | - | Pagination, each page will return 10 comments.
+`page` | - | Pagination, each page will return 8 comments.
 
 ## Get a Specific Comment
 
 > Sample Request
 
 ```ruby
-GET komunitas/v1/comments/16
+GET komunitas/comments/16
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//comments/16"
+curl "http://api.local.host:5000/komunitas/comments/16"
 ```
 
 > Sample Response
@@ -147,7 +147,7 @@ This endpoint retrieves a specific detailed comments, with its child comments (i
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas//comments/:id`
+`GET http://api.local.host:5000/komunitas/comments/:id`
 
 ### URL Parameters
 
@@ -160,7 +160,7 @@ Parameter | Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/comments
+POST komunitas/comments
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 Content-Type Application/JSON
@@ -174,7 +174,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics"
+curl -X POST "api.local.host:5000/komunitas/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1
@@ -210,7 +210,7 @@ curl -X POST "api.local.host:5000/komunitas//topics"
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics"
+curl -X POST "api.local.host:5000/komunitas/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1,
@@ -273,7 +273,7 @@ This endpoint is used to create a comment, either by commenting a topic, or by r
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//comments/`
+`POST http://api.local.host:5000/komunitas/comments/`
 
 ### URL Parameters
 
@@ -289,13 +289,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/comments/1/upvotes
+POST komunitas/comments/1/upvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//comments/1/upvotes"
+curl -X POST "api.local.host:5000/komunitas/comments/1/upvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -322,7 +322,7 @@ This endpoint is used to upvote a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//comments/:id/upvotes`
+`POST http://api.local.host:5000/komunitas/comments/:id/upvotes`
 
 ### URL Parameters
 
@@ -335,7 +335,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/comments/1/downvotes
+POST komunitas/comments/1/downvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
@@ -347,7 +347,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//comments/1/downvotes"
+curl -X POST "api.local.host:5000/komunitas/comments/1/downvotes"
       -d '{ "reason":"O" }'
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
@@ -393,7 +393,7 @@ This endpoint is used to downvote a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//comments/:id/downvotes`
+`POST http://api.local.host:5000/komunitas/comments/:id/downvotes`
 
 ### URL Parameters
 
@@ -414,13 +414,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/comments/1/unvotes
+POST komunitas/comments/1/unvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//comments/1/unvotes"
+curl -X POST "api.local.host:5000/komunitas/comments/1/unvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -447,7 +447,7 @@ This endpoint is used to unvote (remove vote from) a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//comments/:id/unvotes`
+`POST http://api.local.host:5000/komunitas/comments/:id/unvotes`
 
 ### URL Parameters
 

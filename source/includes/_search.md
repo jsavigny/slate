@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/v1/search?forum_search[q]=tes&forum_search[what]=all
+GET komunitas/search?forum_search[q]=tes&forum_search[what]=all
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//search?forum_search[q]=death&forum_search[what]=all&page=1"
+curl "http://api.local.host:5000/komunitas/search?forum_search[q]=death&forum_search[what]=all&page=1"
 ```
 
 > Sample Response
@@ -122,7 +122,7 @@ This endpoint retrieves topics/comments from a search query.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas//search `
+`GET http://api.local.host/komunitas/search `
 
 ### Query Parameters
 

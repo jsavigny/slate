@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/v1/tags
+GET komunitas/tags
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//tags"
+curl "http://api.local.host:5000/komunitas/tags"
 ```
 
 > Sample Response
@@ -40,4 +40,4 @@ This endpoint retrieves all tags.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas//tags `
+`GET http://api.local.host/komunitas/tags `

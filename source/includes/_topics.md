@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/v1/topics?filter=recent&page=1&tag=Semua
+GET komunitas/topics?filter=recent&page=1&tag=Semua
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//topics?filter=recent&page=1&tag=Semua"
+curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua"
 ```
 
 
@@ -93,7 +93,7 @@ This endpoint retrieves all topics, sticky and non sticky alike, sorted by trend
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas//topics `
+`GET http://api.local.host:5000/komunitas/topics `
 
 ### Query Parameters
 
@@ -101,19 +101,19 @@ Parameter | Default | Description
 --------- | ------- | -----------
 `tag` | 'Semua' | The tag to filter the topics.
 `filter` | - | If filter = recent,then the response will return topics sorted by recency (recent topics), else sorted by trending (trending topics)
-`page` | - | Pagination, each page will return 10 topics
+`page` | - | Pagination, each page will return 8 topics
 
 ## Get a Specific Topic
 
 > Sample Request
 
 ```ruby
-GET komunitas/v1/topics/1
+GET komunitas/topics/1
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas//topics/1"
+curl "http://api.local.host:5000/komunitas/topics/1"
 ```
 
 > Sample Response
@@ -182,7 +182,7 @@ This endpoint retrieves a specific detailed topic, with its level 0 comments (co
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas//topics/:id`
+`GET http://api.local.host:5000/komunitas/topics/:id`
 
 ### URL Parameters
 
@@ -195,7 +195,7 @@ Parameter | Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/topics
+POST komunitas/topics
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 Content-Type Application/JSON
@@ -212,7 +212,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics"
+curl -X POST "api.local.host:5000/komunitas/topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -261,7 +261,7 @@ This endpoint is used to create topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//topics/`
+`POST http://api.local.host:5000/komunitas/topics/`
 
 ### URL Parameters
 
@@ -276,7 +276,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/topics/preview
+POST komunitas/topics/preview
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 Content-Type Application/JSON
@@ -293,7 +293,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics"
+curl -X POST "api.local.host:5000/komunitas/topics"
         -d  '{
               "topic":{
                       "title":"Now I am become death",
@@ -341,7 +341,7 @@ This endpoint is used to preview a topic before creation.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//topics/`
+`POST http://api.local.host:5000/komunitas/topics/`
 
 ### URL Parameters
 
@@ -357,13 +357,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/topics/1/upvotes
+POST komunitas/topics/1/upvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics/1/upvotes"
+curl -X POST "api.local.host:5000/komunitas/topics/1/upvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -390,7 +390,7 @@ This endpoint is used to upvote a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//topics/:id/upvotes`
+`POST http://api.local.host:5000/komunitas/topics/:id/upvotes`
 
 ### URL Parameters
 
@@ -403,7 +403,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/topics/1/downvotes
+POST komunitas/topics/1/downvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
@@ -415,7 +415,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics/1/downvotes"
+curl -X POST "api.local.host:5000/komunitas/topics/1/downvotes"
       -d '{ "reason":"O" }'
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
@@ -461,7 +461,7 @@ This endpoint is used to downvote a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//topics/:id/downvotes`
+`POST http://api.local.host:5000/komunitas/topics/:id/downvotes`
 
 ### URL Parameters
 
@@ -482,13 +482,13 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/v1/topics/1/unvotes
+POST komunitas/topics/1/unvotes
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas//topics/1/unvotes"
+curl -X POST "api.local.host:5000/komunitas/topics/1/unvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -515,7 +515,7 @@ This endpoint is used to unvote (remove vote from) a topic.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas//topics/:id/unvotes`
+`POST http://api.local.host:5000/komunitas/topics/:id/unvotes`
 
 ### URL Parameters
 

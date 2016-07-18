@@ -13,6 +13,7 @@ includes:
   - comments
   - tags
   - search
+  - users
 
 search: true
 ---
