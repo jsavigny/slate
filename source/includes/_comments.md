@@ -17,44 +17,167 @@ curl "http://api.local.host:5000/komunitas/comments"
 
 
 ```json
-
 {
   "status": "OK",
   "comments": [
     {
-      "id": 3,
-      "comment": "iya sekarang jelek :(",
-      "markeddown_comment": "<p>iya sekarang jelek :(</p>\n",
-      "created_at": "2016-06-23T10:22:48.000+07:00",
-      "updated_at": "2016-06-23T10:22:48.000+07:00",
-      "upvotes": 1,
+      "id": 199,
+      "comment": "The first rule about..",
+      "markeddown_comment": "<p>The first rule about..</p>\n",
+      "created_at": "2016-07-21T14:53:31.000+07:00",
+      "updated_at": "2016-07-21T14:53:31.000+07:00",
+      "upvotes": 0,
       "downvotes": 0,
+      "vote": null,
       "user": {
         "username": "jsavigny",
         "id": 1,
-        "karma": 0
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Yea",
-        "id": 1
+        "title": "Where is my mind?",
+        "id": 71
       }
     },
     {
-      "id": 2,
-      "comment": "Jelek sekarang logonya",
-      "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
-      "created_at": "2016-06-23T09:51:45.000+07:00",
-      "updated_at": "2016-06-23T09:51:45.000+07:00",
+      "id": 198,
+      "comment": "Whe~re is my mind?...",
+      "markeddown_comment": "<p>Whe~re is my mind?&hellip;</p>\n",
+      "created_at": "2016-07-21T13:03:14.000+07:00",
+      "updated_at": "2016-07-21T13:03:14.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
+      "vote": 1,
       "user": {
         "username": "jsavigny",
         "id": 1,
-        "karma": 0
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Yea",
-        "id": 1
+        "title": "Where is my mind?",
+        "id": 71
+      }
+    },
+    {
+      "id": 197,
+      "comment": "Where is my mind?",
+      "markeddown_comment": "<p>Where is my mind?</p>\n",
+      "created_at": "2016-07-21T13:03:02.000+07:00",
+      "updated_at": "2016-07-21T13:03:02.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Where is my mind?",
+        "id": 71
+      }
+    },
+    {
+      "id": 196,
+      "comment": "Where is my mind?",
+      "markeddown_comment": "<p>Where is my mind?</p>\n",
+      "created_at": "2016-07-21T13:02:57.000+07:00",
+      "updated_at": "2016-07-21T13:02:57.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Where is my mind?",
+        "id": 71
+      }
+    },
+    {
+      "id": 195,
+      "comment": "Your head will collapse, \r\nbut there's nothing in it and you ask yourselves.",
+      "markeddown_comment": "<p>Your head will collapse,</p>\n\n<p>but there&rsquo;s nothing in it and you ask yourselves.</p>\n",
+      "created_at": "2016-07-21T13:02:50.000+07:00",
+      "updated_at": "2016-07-21T13:02:50.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Where is my mind?",
+        "id": 71
+      }
+    },
+    {
+      "id": 194,
+      "comment": "Try this trick, and spin it. Yeah!",
+      "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
+      "created_at": "2016-07-21T13:02:31.000+07:00",
+      "updated_at": "2016-07-21T13:02:31.000+07:00",
+      "upvotes": 0,
+      "downvotes": 0,
+      "vote": null,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Where is my mind?",
+        "id": 71
+      }
+    },
+    {
+      "id": 193,
+      "comment": "op siiih",
+      "markeddown_comment": "<p>op siiih</p>\n",
+      "created_at": "2016-07-20T18:54:32.000+07:00",
+      "updated_at": "2016-07-20T18:54:32.000+07:00",
+      "upvotes": 2,
+      "downvotes": 0,
+      "vote": 1,
+      "user": {
+        "username": "juliosavigny",
+        "id": 2,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/system4/avatars/1/small/250px-Stannis_sigil_coat.png"
+      },
+      "topic": {
+        "title": "Ksong",
+        "id": 69
+      }
+    },
+    {
+      "id": 192,
+      "comment": "hai",
+      "markeddown_comment": "<p>hai</p>\n",
+      "created_at": "2016-07-20T18:53:57.000+07:00",
+      "updated_at": "2016-07-20T18:53:57.000+07:00",
+      "upvotes": 2,
+      "downvotes": 0,
+      "vote": 1,
+      "user": {
+        "username": "juliosavigny",
+        "id": 2,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/system4/avatars/1/small/250px-Stannis_sigil_coat.png"
+      },
+      "topic": {
+        "title": "Aaa",
+        "id": 60
       }
     }
   ],
@@ -96,36 +219,93 @@ curl "http://api.local.host:5000/komunitas/comments/16"
 {
   "status": "OK",
   "comment": {
-    "id": 16,
-    "comment": "Soon I awaked, and there I was, veritably myself again",
-    "markeddown_comment": "<p>Soon I awaked, and there I was, veritably myself again</p>\n",
-    "created_at": "2016-07-01T08:13:03.000+07:00",
-    "updated_at": "2016-07-01T08:13:03.000+07:00",
-    "upvotes": 1,
+    "id": 194,
+    "comment": "Try this trick, and spin it. Yeah!",
+    "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
+    "created_at": "2016-07-21T13:02:31.000+07:00",
+    "updated_at": "2016-07-21T13:02:31.000+07:00",
+    "upvotes": 0,
     "downvotes": 0,
+    "vote": null,
+    "parent_comment_id": null,
     "user": {
       "username": "jsavigny",
       "id": 1,
-      "karma": 1
+      "karma": 2,
+      "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
     },
     "topic": {
-      "title": "Once upon a time, I dreamt I was a butterfly",
-      "id": 46
+      "title": "Where is my mind?",
+      "id": 71
     }
   },
   "child_comments": [
     {
-      "id": 17,
-      "comment": "Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly, dreaming I am a man.",
-      "markeddown_comment": "<p>Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly, dreaming I am a man.</p>\n",
-      "created_at": "2016-07-01T08:13:13.000+07:00",
-      "updated_at": "2016-07-01T08:13:13.000+07:00",
+      "id": 195,
+      "comment": "Your head will collapse, \r\nbut there's nothing in it and you ask yourselves.",
+      "markeddown_comment": "<p>Your head will collapse,</p>\n\n<p>but there&rsquo;s nothing in it and you ask yourselves.</p>\n",
+      "created_at": "2016-07-21T13:02:50.000+07:00",
+      "updated_at": "2016-07-21T13:02:50.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
+      "vote": 1,
+      "parent_comment_id": 194,
       "user": {
         "username": "jsavigny",
         "id": 1,
-        "karma": 1
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      }
+    },
+    {
+      "id": 196,
+      "comment": "Where is my mind?",
+      "markeddown_comment": "<p>Where is my mind?</p>\n",
+      "created_at": "2016-07-21T13:02:57.000+07:00",
+      "updated_at": "2016-07-21T13:02:57.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "parent_comment_id": 195,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      }
+    },
+    {
+      "id": 197,
+      "comment": "Where is my mind?",
+      "markeddown_comment": "<p>Where is my mind?</p>\n",
+      "created_at": "2016-07-21T13:03:02.000+07:00",
+      "updated_at": "2016-07-21T13:03:02.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "parent_comment_id": 196,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      }
+    },
+    {
+      "id": 198,
+      "comment": "Whe~re is my mind?...",
+      "markeddown_comment": "<p>Whe~re is my mind?&hellip;</p>\n",
+      "created_at": "2016-07-21T13:03:14.000+07:00",
+      "updated_at": "2016-07-21T13:03:14.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": 1,
+      "parent_comment_id": 197,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     }
   ],

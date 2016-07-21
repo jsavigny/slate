@@ -21,41 +21,19 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
   "status": "OK",
   "topics": [
     {
-      "id": 62,
-      "title": "Panjang",
-      "created_at": "2016-07-15T11:14:45.000+07:00",
-      "updated_at": "2016-07-15T11:14:45.000+07:00",
+      "id": 71,
+      "title": "Where is my mind?",
+      "created_at": "2016-07-21T13:02:21.000+07:00",
+      "updated_at": "2016-07-21T13:02:21.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": null,
-      "comments_count": 23,
+      "vote": 1,
+      "comments_count": 5,
       "is_sticky": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 4
-      },
-      "tags": [
-        {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
-        }
-      ]
-    },
-    {
-      "id": 61,
-      "title": "Tes Markdown",
-      "created_at": "2016-07-12T19:41:43.000+07:00",
-      "updated_at": "2016-07-12T19:43:42.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 40,
-      "is_sticky": false,
-      "user": {
-        "username": "juliosavigny",
-        "id": 2,
-        "karma": 0
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2
       },
       "tags": [
         {
@@ -65,19 +43,19 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
       ]
     },
     {
-      "id": 60,
-      "title": "Aaa",
-      "created_at": "2016-07-12T19:24:19.000+07:00",
-      "updated_at": "2016-07-12T19:24:19.000+07:00",
+      "id": 70,
+      "title": "Ksong",
+      "created_at": "2016-07-20T10:58:44.000+07:00",
+      "updated_at": "2016-07-20T10:58:44.000+07:00",
       "upvotes": 2,
       "downvotes": 0,
       "vote": 1,
-      "comments_count": 24,
+      "comments_count": 3,
       "is_sticky": false,
       "user": {
         "username": "rahmanadianto",
         "id": 3,
-        "karma": 4
+        "karma": 10
       },
       "tags": [
         {
@@ -87,25 +65,65 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
       ]
     },
     {
-      "id": 59,
-      "title": "Now I am become death",
-      "created_at": "2016-07-12T19:20:23.000+07:00",
-      "updated_at": "2016-07-12T19:20:23.000+07:00",
-      "upvotes": 1,
+      "id": 67,
+      "title": "Ksong",
+      "created_at": "2016-07-20T10:58:27.000+07:00",
+      "updated_at": "2016-07-20T10:58:27.000+07:00",
+      "upvotes": 2,
       "downvotes": 0,
-      "vote": null,
-      "comments_count": 2,
+      "vote": 1,
+      "comments_count": 3,
       "is_sticky": false,
       "user": {
         "username": "rahmanadianto",
         "id": 3,
-        "karma": 4
+        "karma": 10
       },
       "tags": [
         {
-          "tag": "Video",
-          "description": "Bukan XXX"
-        },
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Ksong",
+      "created_at": "2016-07-20T10:58:13.000+07:00",
+      "updated_at": "2016-07-20T10:58:13.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 3,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 10
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Please",
+      "created_at": "2016-07-19T19:47:03.000+07:00",
+      "updated_at": "2016-07-19T19:47:03.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 6,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 10
+      },
+      "tags": [
         {
           "tag": "Gadget",
           "description": "Inspect-her gadget!"
@@ -113,90 +131,68 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
       ]
     },
     {
-      "id": 58,
-      "title": "Ini bergambar loh",
-      "created_at": "2016-07-12T19:06:21.000+07:00",
-      "updated_at": "2016-07-12T19:06:21.000+07:00",
+      "id": 64,
+      "title": "Topic ternary quh",
+      "created_at": "2016-07-19T17:16:09.000+07:00",
+      "updated_at": "2016-07-19T17:16:09.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": null,
-      "comments_count": 1,
-      "is_sticky": false,
-      "user": {
-        "username": "juliosavigny",
-        "id": 2,
-        "karma": 0
-      },
-      "tags": [
-        {
-          "tag": "Kamera",
-          "description": "Double tap to love"
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "title": "Topik Test Rahmanx",
-      "created_at": "2016-07-12T18:52:09.000+07:00",
-      "updated_at": "2016-07-12T18:52:09.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 2,
+      "comments_count": 10,
       "is_sticky": false,
       "user": {
         "username": "rahmanadianto",
         "id": 3,
-        "karma": 4
-      },
-      "tags": [
-        {
-          "tag": "Video",
-          "description": "Bukan XXX"
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "title": "Topik Test EUY",
-      "created_at": "2016-07-12T18:50:31.000+07:00",
-      "updated_at": "2016-07-12T18:50:31.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 0,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 4
-      },
-      "tags": [
-        {
-          "tag": "Video",
-          "description": "Bukan XXX"
-        }
-      ]
-    },
-    {
-      "id": 55,
-      "title": "aku",
-      "created_at": "2016-07-12T18:00:42.000+07:00",
-      "updated_at": "2016-07-12T18:00:42.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 1,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 4
+        "karma": 10
       },
       "tags": [
         {
           "tag": "Rileks",
           "description": "enjoy aja"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Aaasdfasdf",
+      "created_at": "2016-07-19T17:03:15.000+07:00",
+      "updated_at": "2016-07-19T17:03:15.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 6,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 10
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Panjang",
+      "created_at": "2016-07-15T11:14:45.000+07:00",
+      "updated_at": "2016-07-15T11:14:45.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 31,
+      "is_sticky": false,
+      "user": {
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 10
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Hello, World!"
         }
       ]
     },
@@ -205,10 +201,10 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
       "title": "Topik 3",
       "created_at": "2016-06-29T10:54:32.000+07:00",
       "updated_at": "2016-06-29T10:56:48.000+07:00",
-      "upvotes": 1,
+      "upvotes": 0,
       "downvotes": 0,
-      "vote": 1,
-      "comments_count": 0,
+      "vote": null,
+      "comments_count": 11,
       "is_sticky": true,
       "user": {
         "username": "jsavigny",
@@ -261,45 +257,61 @@ curl "http://api.local.host:5000/komunitas/topics/1"
 {
   "status": "OK",
   "topic": {
-    "id": 1,
-    "title": "Yea",
-    "description": "Instagram",
-    "markeddown_description": "<p>Instagram</p>\n",
-    "created_at": "2016-06-23T09:51:37.000+07:00",
-    "updated_at": "2016-06-23T09:51:37.000+07:00",
+    "id": 71,
+    "title": "Where is my mind?",
+    "description": "With your feet on the air and your head on the ground.",
+    "markeddown_description": "<p>With your feet on the air and your head on the ground.</p>\n",
+    "created_at": "2016-07-21T13:02:21.000+07:00",
+    "updated_at": "2016-07-21T13:02:21.000+07:00",
     "upvotes": 1,
     "downvotes": 0,
-    "comments_count": 2,
+    "vote": 1,
+    "comments_count": 6,
     "user": {
       "username": "jsavigny",
       "id": 1,
-      "karma": 0
+      "karma": 2
     },
     "tags": [
       {
-        "tag": "Komputer",
-        "description": "Magic Box"
-      },
-      {
-        "name": "Kamera",
-        "description": "Double tap to love"
+        "tag": "Rileks",
+        "description": "enjoy aja"
       }
     ]
   },
   "comments": [
     {
-      "id": 2,
-      "comment": "Jelek sekarang logonya",
-      "markeddown_comment": "<p>Jelek sekarang logonya</p>\n",
-      "created_at": "2016-06-23T09:51:45.000+07:00",
-      "updated_at": "2016-06-23T09:51:45.000+07:00",
+      "id": 199,
+      "comment": "The first rule about..",
+      "markeddown_comment": "<p>The first rule about..</p>\n",
+      "created_at": "2016-07-21T14:53:31.000+07:00",
+      "updated_at": "2016-07-21T14:53:31.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
+      "vote": null,
       "parent_comment_id": null,
       "user": {
         "username": "jsavigny",
         "id": 1,
-        "karma": 0
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      }
+    },
+    {
+      "id": 194,
+      "comment": "Try this trick, and spin it. Yeah!",
+      "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
+      "created_at": "2016-07-21T13:02:31.000+07:00",
+      "updated_at": "2016-07-21T13:02:31.000+07:00",
+      "upvotes": 0,
+      "downvotes": 0,
+      "vote": null,
+      "parent_comment_id": null,
+      "user": {
+        "username": "jsavigny",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     }
   ],

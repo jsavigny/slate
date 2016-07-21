@@ -20,18 +20,19 @@ curl "http://api.local.host:5000/komunitas/tags"
 {
   "status": "OK",
   "user": {
-    "id": 1,
-    "username": "jsavigny",
-    "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg",
-    "name": "Julio",
+    "id": 2,
+    "username": "juliosavigny",
+    "avatar": "http://www.local.host:5000/system4/avatars/1/small/250px-Stannis_sigil_coat.png",
+    "name": "Julio Savigny",
     "karma": 2,
-    "topics_count": 49,
-    "comments_count": 31,
+    "topics_count": 4,
+    "comments_count": 12,
     "is_banned": false,
-    "is_admin": true,
+    "is_admin": false,
     "is_moderator": false,
     "is_active": true,
-    "created_at": "2016-06-21T10:23:49.000+07:00"
+    "created_at": "2016-06-23T14:26:19.000+07:00",
+    "description": null
   },
   "message": "User Profile"
 }
