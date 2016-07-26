@@ -1043,6 +1043,80 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 </tr>
 </tbody></table>
 
+<h2 id="sticky-unsticky-a-topic">Sticky / Unsticky a topic</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">sticky</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/sticky"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Sticky Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sticky Success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Unsticky Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unsticky Success"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Unauthorized Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda tidak dapat mengakses halaman tersebut"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to make a topic a sticky one if it has not already been.
+If the topic is already a sticky topic, then this action will remove the sticky status (unsticky).
+Only moderators and administrators can do this action.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/sticky</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:id</code></td>
+<td>required</td>
+<td>id of the topic</td>
+</tr>
+</tbody></table>
+
           <h1 id="comments">Comments</h1>
 
 <h2 id="get-all-comments">Get All Comments</h2>
@@ -2665,6 +2739,79 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <td><code class="prettyprint">page</code></td>
 <td>-</td>
 <td>Pagination, each page will return 8 comments.</td>
+</tr>
+</tbody></table>
+
+<h2 id="freeze-unfreeze-user-forum-activity">Freeze/Unfreeze User forum activity</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="mi">3</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/user/3"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+</code></pre>
+
+<blockquote>
+<p>Freeze Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User telah di-freeze"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Unfreeze Success Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User telah di-unfreeze"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Not Found Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not Found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Authentication Error</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anda harus login untuk mengakses halaman ini"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>This endpoint is used to freeze or unfreeze a user forum activity.
+Only moderators and admins can do this actions.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/unvotes</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:id</code></td>
+<td>required</td>
+<td>id of the topic</td>
 </tr>
 </tbody></table>
 
