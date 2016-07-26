@@ -21,169 +21,128 @@ curl "http://api.local.host:5000/komunitas/comments"
   "status": "OK",
   "comments": [
     {
-      "id": 199,
-      "comment": "The first rule about..",
-      "markeddown_comment": "<p>The first rule about..</p>\n",
-      "created_at": "2016-07-21T14:53:31.000+07:00",
-      "updated_at": "2016-07-21T14:53:31.000+07:00",
-      "upvotes": 0,
-      "downvotes": 0,
-      "vote": null,
-      "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
-      },
-      "topic": {
-        "title": "Where is my mind?",
-        "id": 71
-      }
-    },
-    {
-      "id": 198,
-      "comment": "Whe~re is my mind?...",
-      "markeddown_comment": "<p>Whe~re is my mind?&hellip;</p>\n",
-      "created_at": "2016-07-21T13:03:14.000+07:00",
-      "updated_at": "2016-07-21T13:03:14.000+07:00",
+      "id": 239,
+      "comment": "Combo BREAKERRRRR",
+      "markeddown_comment": "<p>Combo BREAKERRRRR</p>\n",
+      "created_at": "2016-07-26T09:33:00.000+07:00",
+      "updated_at": "2016-07-26T09:33:00.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Where is my mind?",
-        "id": 71
+        "title": "Hey Jude!",
+        "id": 92
       }
     },
     {
-      "id": 197,
-      "comment": "Where is my mind?",
-      "markeddown_comment": "<p>Where is my mind?</p>\n",
-      "created_at": "2016-07-21T13:03:02.000+07:00",
-      "updated_at": "2016-07-21T13:03:02.000+07:00",
+      "id": 238,
+      "comment": "Then you can start, to make it better..",
+      "markeddown_comment": "<p>Then you can start, to make it better..</p>\n",
+      "created_at": "2016-07-26T09:32:54.000+07:00",
+      "updated_at": "2016-07-26T09:32:54.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Where is my mind?",
-        "id": 71
+        "title": "Hey Jude!",
+        "id": 92
       }
     },
     {
-      "id": 196,
-      "comment": "Where is my mind?",
-      "markeddown_comment": "<p>Where is my mind?</p>\n",
-      "created_at": "2016-07-21T13:02:57.000+07:00",
-      "updated_at": "2016-07-21T13:02:57.000+07:00",
+      "id": 237,
+      "comment": "Remember, to let her into your heart.",
+      "markeddown_comment": "<p>Remember, to let her into your heart.</p>\n",
+      "created_at": "2016-07-26T09:32:36.000+07:00",
+      "updated_at": "2016-07-26T09:32:36.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Where is my mind?",
-        "id": 71
+        "title": "Hey Jude!",
+        "id": 92
       }
     },
     {
-      "id": 195,
-      "comment": "Your head will collapse, \r\nbut there's nothing in it and you ask yourselves.",
-      "markeddown_comment": "<p>Your head will collapse,</p>\n\n<p>but there&rsquo;s nothing in it and you ask yourselves.</p>\n",
-      "created_at": "2016-07-21T13:02:50.000+07:00",
-      "updated_at": "2016-07-21T13:02:50.000+07:00",
+      "id": 236,
+      "comment": "And make it better..",
+      "markeddown_comment": "<p>And make it better..</p>\n",
+      "created_at": "2016-07-26T09:31:59.000+07:00",
+      "updated_at": "2016-07-26T09:31:59.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Where is my mind?",
-        "id": 71
+        "title": "Hey Jude!",
+        "id": 92
       }
     },
     {
-      "id": 194,
-      "comment": "Try this trick, and spin it. Yeah!",
-      "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
-      "created_at": "2016-07-21T13:02:31.000+07:00",
-      "updated_at": "2016-07-21T13:02:31.000+07:00",
-      "upvotes": 0,
+      "id": 235,
+      "comment": "Take a sad song..",
+      "markeddown_comment": "<p>Take a sad song..</p>\n",
+      "created_at": "2016-07-26T09:31:51.000+07:00",
+      "updated_at": "2016-07-26T09:31:51.000+07:00",
+      "upvotes": 1,
       "downvotes": 0,
-      "vote": null,
+      "vote": 1,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Where is my mind?",
-        "id": 71
-      }
-    },
-    {
-      "id": 193,
-      "comment": "op siiih",
-      "markeddown_comment": "<p>op siiih</p>\n",
-      "created_at": "2016-07-20T18:54:32.000+07:00",
-      "updated_at": "2016-07-20T18:54:32.000+07:00",
-      "upvotes": 2,
-      "downvotes": 0,
-      "vote": 1,
-      "user": {
-        "username": "juliosavigny",
-        "id": 2,
-        "karma": 2,
-        "avatar": "http://www.local.host:5000/system4/avatars/1/small/250px-Stannis_sigil_coat.png"
-      },
-      "topic": {
-        "title": "Ksong",
-        "id": 69
-      }
-    },
-    {
-      "id": 192,
-      "comment": "hai",
-      "markeddown_comment": "<p>hai</p>\n",
-      "created_at": "2016-07-20T18:53:57.000+07:00",
-      "updated_at": "2016-07-20T18:53:57.000+07:00",
-      "upvotes": 2,
-      "downvotes": 0,
-      "vote": 1,
-      "user": {
-        "username": "juliosavigny",
-        "id": 2,
-        "karma": 2,
-        "avatar": "http://www.local.host:5000/system4/avatars/1/small/250px-Stannis_sigil_coat.png"
-      },
-      "topic": {
-        "title": "Aaa",
-        "id": 60
+        "title": "Hey Jude!",
+        "id": 92
       }
     }
   ],
   "message": "Comments"
 }
-
 ```
 
 
@@ -205,12 +164,12 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET komunitas/comments/16
+GET komunitas/comments/235
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/comments/16"
+curl "http://api.local.host:5000/komunitas/comments/235"
 ```
 
 > Sample Response
@@ -219,92 +178,112 @@ curl "http://api.local.host:5000/komunitas/comments/16"
 {
   "status": "OK",
   "comment": {
-    "id": 194,
-    "comment": "Try this trick, and spin it. Yeah!",
-    "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
-    "created_at": "2016-07-21T13:02:31.000+07:00",
-    "updated_at": "2016-07-21T13:02:31.000+07:00",
-    "upvotes": 0,
+    "id": 235,
+    "comment": "Take a sad song..",
+    "markeddown_comment": "<p>Take a sad song..</p>\n",
+    "upvotes": 1,
     "downvotes": 0,
-    "vote": null,
+    "vote": 1,
+    "created_at": "2016-07-26T09:31:51.000+07:00",
+    "updated_at": "2016-07-26T09:31:51.000+07:00",
     "parent_comment_id": null,
+    "is_editable": true,
+    "is_deletable": true,
+    "is_undeletable": true,
+    "is_gone": false,
     "user": {
-      "username": "jsavigny",
-      "id": 1,
-      "karma": 2,
+      "username": "rahmanadianto",
+      "id": 3,
+      "karma": 19,
       "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
     },
     "topic": {
-      "title": "Where is my mind?",
-      "id": 71
+      "title": "Hey Jude!",
+      "id": 92
     }
   },
   "child_comments": [
     {
-      "id": 195,
-      "comment": "Your head will collapse, \r\nbut there's nothing in it and you ask yourselves.",
-      "markeddown_comment": "<p>Your head will collapse,</p>\n\n<p>but there&rsquo;s nothing in it and you ask yourselves.</p>\n",
-      "created_at": "2016-07-21T13:02:50.000+07:00",
-      "updated_at": "2016-07-21T13:02:50.000+07:00",
+      "id": 236,
+      "comment": "And make it better..",
+      "markeddown_comment": "<p>And make it better..</p>\n",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "parent_comment_id": 194,
+      "created_at": "2016-07-26T09:31:59.000+07:00",
+      "updated_at": "2016-07-26T09:31:59.000+07:00",
+      "parent_comment_id": 235,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "is_gone": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     },
     {
-      "id": 196,
-      "comment": "Where is my mind?",
-      "markeddown_comment": "<p>Where is my mind?</p>\n",
-      "created_at": "2016-07-21T13:02:57.000+07:00",
-      "updated_at": "2016-07-21T13:02:57.000+07:00",
+      "id": 237,
+      "comment": "Remember, to let her into your heart.",
+      "markeddown_comment": "<p>Remember, to let her into your heart.</p>\n",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "parent_comment_id": 195,
+      "created_at": "2016-07-26T09:32:36.000+07:00",
+      "updated_at": "2016-07-26T09:32:36.000+07:00",
+      "parent_comment_id": 236,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "is_gone": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     },
     {
-      "id": 197,
-      "comment": "Where is my mind?",
-      "markeddown_comment": "<p>Where is my mind?</p>\n",
-      "created_at": "2016-07-21T13:03:02.000+07:00",
-      "updated_at": "2016-07-21T13:03:02.000+07:00",
+      "id": 238,
+      "comment": "Then you can start, to make it better..",
+      "markeddown_comment": "<p>Then you can start, to make it better..</p>\n",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "parent_comment_id": 196,
+      "created_at": "2016-07-26T09:32:54.000+07:00",
+      "updated_at": "2016-07-26T09:32:54.000+07:00",
+      "parent_comment_id": 237,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "is_gone": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     },
     {
-      "id": 198,
-      "comment": "Whe~re is my mind?...",
-      "markeddown_comment": "<p>Whe~re is my mind?&hellip;</p>\n",
-      "created_at": "2016-07-21T13:03:14.000+07:00",
-      "updated_at": "2016-07-21T13:03:14.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": 1,
-      "parent_comment_id": 197,
+      "id": 239,
+      "comment": "Comment removed by author",
+      "markeddown_comment": "Comment removed by author",
+      "upvotes": null,
+      "downvotes": null,
+      "vote": null,
+      "created_at": "2016-07-26T09:33:00.000+07:00",
+      "updated_at": "2016-07-26T09:33:00.000+07:00",
+      "parent_comment_id": 238,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "is_gone": true,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     }
@@ -418,7 +397,7 @@ curl -X POST "api.local.host:5000/komunitas/topics"
 ```json
 {
   "status": "ERROR",
-  "message": "Story Not Found"
+  "message": "Not Found"
 }
 ```
 > Invalid Parent Comment Error response
@@ -463,6 +442,226 @@ Parameter |        |Description
 `story_id` | required | id of the story that you're commenting
 `parent_comment_id` | not required | id of the comment that you're replying to
 
+## Edit a comment
+
+> Sample Request
+
+```ruby
+PATCH komunitas/comment/19
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+Content-Type Application/JSON
+```
+
+```json
+{
+    "comment":"Edited"
+}
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/comments/19"
+        -d  '{
+                "comment":"Edited"
+             }'
+      -H "Content-Type: application/json"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "comment": {
+    "id": 19,
+    "story_id": 1,
+    "parent_comment_id": null
+  },
+  "message": "Comment Edited"
+}
+```
+
+> Authentication Error response
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error Response
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Not Permitted Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Permitted"
+}
+```
+
+This endpoint is used to edit a comment.
+A comment can be edited by the author of the comment if the comment is still recent, or by moderators and administrators.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`PATCH http://api.local.host:5000/komunitas/comments/:id`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | ------------ |-----------
+`comment` | required |The comment
+`:id` | required | id of the comment
+
+## Delete a comment
+
+> Sample Request
+
+```ruby
+DELETE komunitas/comments/1
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+    "moderation_reason": "reason"
+}
+```
+
+```shell
+curl -X DELETE "api.local.host:5000/komunitas/topics/1"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Comment Deleted"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to delete a comment.
+A comment can be deleted by the author of the comment, or by moderators and administrators.
+
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`DELETE http://api.local.host:5000/komunitas/comments/:id`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
+`moderation_reason` |  | reason for deletion
+
+## Undelete a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/comments/1/restoration
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/comments/1/restoration"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Comment Undeleted"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to undelete a comment.
+A comment can be undeleted if the comment is gone (deleted) by the author of the comment, or by moderators/admins.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/comments/:id/restoration`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
 
 ## Upvote a comment
 

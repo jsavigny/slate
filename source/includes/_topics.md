@@ -245,8 +245,7 @@ curl -X POST "api.local.host:5000/komunitas/topics"
   "status": "OK",
   "topic_detail": {
     "id": 8,
-    "short_id": "y6msra",
-    "title_as_url": "now_i_am_become_death"
+    "title":"Now I am become death"
   },
   "message": "Topic Created"
 }
@@ -402,7 +401,11 @@ curl -X PATCH "api.local.host:5000/komunitas/topics/1"
 ```json
 {
   "status": "OK",
-  "message": "Topic Updated"
+  "topic_detail": {
+    "id": 1,
+    "title":"Now I am become death"
+  },
+  "message": "Topic Edited"
 }
 ```
 
@@ -603,7 +606,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 
 ### HTTP Request
 
-`DELETE http://api.local.host:5000/komunitas/topics/:id`
+`POST http://api.local.host:5000/komunitas/topics/:id/restoration`
 
 ### URL Parameters
 
