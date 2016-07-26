@@ -785,3 +785,69 @@ This endpoint is used to unvote (remove vote from) a topic.
 Parameter |        |Description
 --------- | -------- |-----------
 `:id` | required |id of the topic
+
+## Sticky / Unsticky a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/topics/1/sticky
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/topics/1/sticky"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Sticky Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Sticky Success"
+}
+```
+
+> Unsticky Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Unsticky Success"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to make a topic a sticky one if it has not already been.
+If the topic is already a sticky topic, then this action will remove the sticky status (unsticky).
+Only moderators and administrators can do this action.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/topics/:id/sticky`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic

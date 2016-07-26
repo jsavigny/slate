@@ -468,3 +468,69 @@ Parameter | Default | Description
 --------- | ------- | -----------
 `id` | - | id of the user
 `page` | - | Pagination, each page will return 8 comments.
+
+## Freeze/Unfreeze User forum activity
+
+> Sample Request
+
+```ruby
+PATCH komunitas/user/3
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/user/3"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+
+> Freeze Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "User telah di-freeze"
+}
+```
+
+> Unfreeze Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "User telah di-unfreeze"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+This endpoint is used to freeze or unfreeze a user forum activity.
+Only moderators and admins can do this actions.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/topics/:id/unvotes`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
