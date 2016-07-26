@@ -21,200 +21,74 @@ curl "http://api.local.host:5000/komunitas/topics?filter=recent&page=1&tag=Semua
   "status": "OK",
   "topics": [
     {
-      "id": 71,
-      "title": "Where is my mind?",
-      "created_at": "2016-07-21T13:02:21.000+07:00",
-      "updated_at": "2016-07-21T13:02:21.000+07:00",
+      "id": 92,
+      "title": "Hey Jude!",
+      "created_at": "2016-07-26T09:27:27.000+07:00",
+      "updated_at": "2016-07-26T09:27:27.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "comments_count": 5,
+      "comments_count": 0,
       "is_sticky": false,
+      "is_editable": true,
+      "is_undeletable": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19
       },
       "tags": [
         {
-          "tag": "Rileks",
-          "description": "enjoy aja"
+          "tag": "Kamera",
+          "description": "Double tap to love"
         }
       ]
     },
     {
-      "id": 70,
-      "title": "Ksong",
-      "created_at": "2016-07-20T10:58:44.000+07:00",
-      "updated_at": "2016-07-20T10:58:44.000+07:00",
-      "upvotes": 2,
+      "id": 87,
+      "title": "Coba Updated",
+      "created_at": "2016-07-25T12:48:58.000+07:00",
+      "updated_at": "2016-07-25T12:49:08.000+07:00",
+      "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "comments_count": 3,
+      "comments_count": 0,
       "is_sticky": false,
+      "is_editable": false,
+      "is_undeletable": false,
       "user": {
         "username": "rahmanadianto",
         "id": 3,
-        "karma": 10
+        "karma": 19
       },
       "tags": [
         {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
+          "tag": "Video",
+          "description": "Bukan XXX"
         }
       ]
     },
     {
-      "id": 67,
-      "title": "Ksong",
-      "created_at": "2016-07-20T10:58:27.000+07:00",
-      "updated_at": "2016-07-20T10:58:27.000+07:00",
-      "upvotes": 2,
+      "id": 82,
+      "title": "Rest Updated",
+      "created_at": "2016-07-25T11:25:18.000+07:00",
+      "updated_at": "2016-07-25T11:25:32.000+07:00",
+      "upvotes": 1,
       "downvotes": 0,
       "vote": 1,
-      "comments_count": 3,
+      "comments_count": 0,
       "is_sticky": false,
+      "is_editable": false,
+      "is_undeletable": false,
       "user": {
         "username": "rahmanadianto",
         "id": 3,
-        "karma": 10
+        "karma": 19
       },
       "tags": [
         {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
-        }
-      ]
-    },
-    {
-      "id": 66,
-      "title": "Ksong",
-      "created_at": "2016-07-20T10:58:13.000+07:00",
-      "updated_at": "2016-07-20T10:58:13.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 3,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 10
-      },
-      "tags": [
-        {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
-        }
-      ]
-    },
-    {
-      "id": 65,
-      "title": "Please",
-      "created_at": "2016-07-19T19:47:03.000+07:00",
-      "updated_at": "2016-07-19T19:47:03.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 6,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 10
-      },
-      "tags": [
-        {
-          "tag": "Gadget",
-          "description": "Inspect-her gadget!"
-        }
-      ]
-    },
-    {
-      "id": 64,
-      "title": "Topic ternary quh",
-      "created_at": "2016-07-19T17:16:09.000+07:00",
-      "updated_at": "2016-07-19T17:16:09.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 10,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 10
-      },
-      "tags": [
-        {
-          "tag": "Rileks",
-          "description": "enjoy aja"
-        }
-      ]
-    },
-    {
-      "id": 63,
-      "title": "Aaasdfasdf",
-      "created_at": "2016-07-19T17:03:15.000+07:00",
-      "updated_at": "2016-07-19T17:03:15.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 6,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 10
-      },
-      "tags": [
-        {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
-        }
-      ]
-    },
-    {
-      "id": 62,
-      "title": "Panjang",
-      "created_at": "2016-07-15T11:14:45.000+07:00",
-      "updated_at": "2016-07-15T11:14:45.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 31,
-      "is_sticky": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 10
-      },
-      "tags": [
-        {
-          "tag": "Pengumuman",
-          "description": "Hello, World!"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Topik 3",
-      "created_at": "2016-06-29T10:54:32.000+07:00",
-      "updated_at": "2016-06-29T10:56:48.000+07:00",
-      "upvotes": 0,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 11,
-      "is_sticky": true,
-      "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2
-      },
-      "tags": [
-        {
-          "tag": "Gadget",
-          "description": "Inspect-her gadget!"
+          "tag": "Video",
+          "description": "Bukan XXX"
         }
       ]
     }
@@ -257,60 +131,50 @@ curl "http://api.local.host:5000/komunitas/topics/1"
 {
   "status": "OK",
   "topic": {
-    "id": 71,
-    "title": "Where is my mind?",
-    "description": "With your feet on the air and your head on the ground.",
-    "markeddown_description": "<p>With your feet on the air and your head on the ground.</p>\n",
-    "created_at": "2016-07-21T13:02:21.000+07:00",
-    "updated_at": "2016-07-21T13:02:21.000+07:00",
+    "description": "Don't make it bad.",
+    "markeddown_description": "<p>Don&rsquo;t make it bad.</p>\n",
+    "id": 92,
+    "title": "Hey Jude!",
+    "created_at": "2016-07-26T09:27:27.000+07:00",
+    "updated_at": "2016-07-26T09:27:27.000+07:00",
     "upvotes": 1,
     "downvotes": 0,
     "vote": 1,
-    "comments_count": 6,
+    "comments_count": 5,
+    "is_editable": true,
+    "is_gone": false,
+    "is_undeletable": true,
     "user": {
-      "username": "jsavigny",
-      "id": 1,
-      "karma": 2
+      "username": "rahmanadianto",
+      "id": 3,
+      "karma": 19
     },
     "tags": [
       {
-        "tag": "Rileks",
-        "description": "enjoy aja"
+        "tag": "Kamera",
+        "description": "Double tap to love"
       }
     ]
   },
   "comments": [
     {
-      "id": 199,
-      "comment": "The first rule about..",
-      "markeddown_comment": "<p>The first rule about..</p>\n",
-      "created_at": "2016-07-21T14:53:31.000+07:00",
-      "updated_at": "2016-07-21T14:53:31.000+07:00",
+      "id": 235,
+      "comment": "Take a sad song..",
+      "markeddown_comment": "<p>Take a sad song..</p>\n",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": null,
+      "vote": 1,
+      "created_at": "2016-07-26T09:31:51.000+07:00",
+      "updated_at": "2016-07-26T09:31:51.000+07:00",
       "parent_comment_id": null,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "is_gone": false,
       "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
-      }
-    },
-    {
-      "id": 194,
-      "comment": "Try this trick, and spin it. Yeah!",
-      "markeddown_comment": "<p>Try this trick, and spin it. Yeah!</p>\n",
-      "created_at": "2016-07-21T13:02:31.000+07:00",
-      "updated_at": "2016-07-21T13:02:31.000+07:00",
-      "upvotes": 0,
-      "downvotes": 0,
-      "vote": null,
-      "parent_comment_id": null,
-      "user": {
-        "username": "jsavigny",
-        "id": 1,
-        "karma": 2,
+        "username": "rahmanadianto",
+        "id": 3,
+        "karma": 19,
         "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
       }
     }
@@ -501,6 +365,251 @@ Parameter |        |Description
 `title` | required |Title of the topic
 `tags_a` | required |Tags of the topic
 `description` | required | Body/description of the topic
+
+## Edit a topic
+
+> Sample Request
+
+```ruby
+PATCH komunitas/topics/1
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+  "topic":{
+          "title":"Coba Updated",
+          "description":"Updated Description",
+          "moderation_reason": "Reason"
+  }
+}
+```
+
+```shell
+curl -X PATCH "api.local.host:5000/komunitas/topics/1"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+      -d  '{
+            "topic":{
+                    "title":"Coba Updated",
+                    "description":"Updated Description",
+                    "moderation_reason": "Reason"
+            }
+          }'
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Topic Updated"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+> Not Permitted Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Permitted"
+}
+```
+
+This endpoint is used to edit a topic.
+A topic can be edited by the author of the topic if the topic is still recent, or by moderators and administrators.
+
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`PATCH http://api.local.host:5000/komunitas/topics/:id`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`title` |   |Title of the topic
+`tags_a` |   |Tags of the topic
+`description` |   | Body/description of the topic
+`moderation_reason` | only for moderators/admins | The reason for changes
+
+## Delete a topic
+
+> Sample Request
+
+```ruby
+DELETE komunitas/topics/1
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```json
+{
+    "moderation_reason": "reason"
+}
+```
+
+```shell
+curl -X DELETE "api.local.host:5000/komunitas/topics/1"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+      -d  '{
+            "moderation_reason": "reason"
+          }'
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Topic Deleted"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to delete a topic.
+A topic can be deleted by moderators and administrators.
+
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`DELETE http://api.local.host:5000/komunitas/topics/:id`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
+`moderation_reason` |  | reason for deletion
+
+## Undelete a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/topics/1/restoration
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/topics/1/restoration"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Topic Undeleted"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Not Found Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Found"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+> Not Permitted Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Not Permitted"
+}
+```
+
+This endpoint is used to undelete a topic.
+A topic can be undeleted by moderators/admins if the topic is gone (deleted)
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`DELETE http://api.local.host:5000/komunitas/topics/:id`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
 
 
 ## Upvote a topic
