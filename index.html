@@ -2262,10 +2262,10 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">juliosavigny</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/tags"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/juliosavigny"</span>
 </code></pre>
 
 <blockquote>
@@ -2305,7 +2305,23 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host/komunitas/users</code></p>
+<p><code class="prettyprint">GET http://api.local.host/komunitas/users/:username</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">:username</code></td>
+<td>required</td>
+<td>username of the user</td>
+</tr>
+</tbody></table>
 
 <h2 id="get-all-topics-posted-by-a-user">Get All Topics posted by a User</h2>
 
@@ -2315,7 +2331,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">topics?</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/1/topics?&amp;page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/jsavigny/topics?&amp;page=1"</span>
 </code></pre>
 
 <blockquote>
@@ -2509,7 +2525,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/users/:id/topics</code></p>
+<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/users/:username/topics</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -2521,9 +2537,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 </tr>
 </thead><tbody>
 <tr>
-<td><code class="prettyprint">id</code></td>
+<td><code class="prettyprint">username</code></td>
 <td>-</td>
-<td>id of the user</td>
+<td>username of the user</td>
 </tr>
 <tr>
 <td><code class="prettyprint">page</code></td>
@@ -2537,7 +2553,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">comments?page</span><span class="o">=</span><span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">jsavigny</span><span class="o">/</span><span class="n">comments?page</span><span class="o">=</span><span class="mi">1</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 </code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/1/comments?page=1"</span>
@@ -2711,7 +2727,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User Profile"</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"User Comments"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 
@@ -2719,7 +2735,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host/komunitas/users/:id/comments</code></p>
+<p><code class="prettyprint">GET http://api.local.host/komunitas/users/:username/comments</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -2731,9 +2747,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 </tr>
 </thead><tbody>
 <tr>
-<td><code class="prettyprint">id</code></td>
+<td><code class="prettyprint">username</code></td>
 <td>-</td>
-<td>id of the user</td>
+<td>username of the user</td>
 </tr>
 <tr>
 <td><code class="prettyprint">page</code></td>
@@ -2747,11 +2763,11 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="mi">3</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">rahmanadianto</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/user/3"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.local.host:5000/komunitas/user/rahmanadianto"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -2797,7 +2813,7 @@ Only moderators and admins can do this actions.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/unvotes</code></p>
+<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/user/:username</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -2809,9 +2825,9 @@ Only moderators and admins can do this actions.
 </tr>
 </thead><tbody>
 <tr>
-<td><code class="prettyprint">:id</code></td>
+<td><code class="prettyprint">username</code></td>
 <td>required</td>
-<td>id of the topic</td>
+<td>username of the user</td>
 </tr>
 </tbody></table>
 
