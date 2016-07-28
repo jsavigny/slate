@@ -5,12 +5,12 @@
 > Sample Request
 
 ```ruby
-GET komunitas/users/1
+GET komunitas/users/juliosavigny
 Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/tags"
+curl "http://api.local.host:5000/komunitas/users/juliosavigny"
 ```
 
 > Sample Response
@@ -52,7 +52,13 @@ This endpoint retrieves user profile.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas/users `
+`GET http://api.local.host/komunitas/users/:username `
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:username` | required | username of the user
 
 ## Get All Topics posted by a User
 
@@ -64,7 +70,7 @@ Host: api.local.host:5000
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/1/topics?&page=1"
+curl "http://api.local.host:5000/komunitas/users/jsavigny/topics?&page=1"
 ```
 
 
@@ -260,13 +266,13 @@ This endpoint retrieves all topics posted by specific user.
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas/users/:id/topics `
+`GET http://api.local.host:5000/komunitas/users/:username/topics `
 
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
-`id` | - | id of the user
+`username` | - | username of the user
 `page` | - | Pagination, each page will return 8 topics
 
 ## Get All Comments posted by a User
@@ -274,7 +280,7 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET komunitas/users/1/comments?page=1
+GET komunitas/users/jsavigny/comments?page=1
 Host: api.local.host:5000
 ```
 
@@ -451,7 +457,7 @@ curl "http://api.local.host:5000/komunitas/users/1/comments?page=1"
       }
     }
   ],
-  "message": "User Profile"
+  "message": "User Comments"
 }
 ```
 
@@ -460,13 +466,13 @@ This endpoint retrieves all comments posted by a specific user.
 
 ### HTTP Request
 
-`GET http://api.local.host/komunitas/users/:id/comments `
+`GET http://api.local.host/komunitas/users/:username/comments `
 
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
-`id` | - | id of the user
+`username` | - | username of the user
 `page` | - | Pagination, each page will return 8 comments.
 
 ## Freeze/Unfreeze User forum activity
@@ -474,13 +480,13 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-PATCH komunitas/user/3
+PATCH komunitas/user/rahmanadianto
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/user/3"
+curl -X PATCH "api.local.host:5000/komunitas/user/rahmanadianto"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
@@ -527,10 +533,10 @@ Only moderators and admins can do this actions.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/topics/:id/unvotes`
+`PATCH http://api.local.host:5000/komunitas/user/:username`
 
 ### URL Parameters
 
 Parameter |        |Description
 --------- | -------- |-----------
-`:id` | required |id of the topic
+`username` | required | username of the user
