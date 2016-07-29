@@ -9,8 +9,21 @@ GET komunitas/users/juliosavigny
 Host: api.local.host:5000
 ```
 
+OR
+
+```ruby
+GET komunitas/users/2
+Host: api.local.host:5000
+```
+
 ```shell
 curl "http://api.local.host:5000/komunitas/users/juliosavigny"
+```
+
+OR
+
+```shell
+curl "http://api.local.host:5000/komunitas/users/2"
 ```
 
 > Sample Response
@@ -52,13 +65,18 @@ This endpoint retrieves user profile.
 
 ### HTTP Request
 
+`GET http://api.local.host/komunitas/users/:id `
+
+OR
+
 `GET http://api.local.host/komunitas/users/:username `
 
 ### URL Parameters
 
 Parameter |        |Description
 --------- | -------- |-----------
-`:username` | required | username of the user
+`username` | required | username of the user
+`id` | required | username of the id
 
 ## Get All Topics posted by a User
 
@@ -68,6 +86,19 @@ Parameter |        |Description
 GET komunitas/users/1/topics?&page=1
 Host: api.local.host:5000
 ```
+
+OR
+
+```ruby
+GET komunitas/users/jsavigny/topics?&page=1
+Host: api.local.host:5000
+```
+
+```shell
+curl "http://api.local.host:5000/komunitas/users/1/topics?&page=1"
+```
+
+OR
 
 ```shell
 curl "http://api.local.host:5000/komunitas/users/jsavigny/topics?&page=1"
@@ -268,11 +299,17 @@ This endpoint retrieves all topics posted by specific user.
 
 `GET http://api.local.host:5000/komunitas/users/:username/topics `
 
+OR
+
+`GET http://api.local.host:5000/komunitas/users/:id/topics `
+
+
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
 `username` | - | username of the user
+`id` | - | id of the user
 `page` | - | Pagination, each page will return 8 topics
 
 ## Get All Comments posted by a User
@@ -284,8 +321,21 @@ GET komunitas/users/jsavigny/comments?page=1
 Host: api.local.host:5000
 ```
 
+OR
+
+```ruby
+GET komunitas/users/1/comments?page=1
+Host: api.local.host:5000
+```
+
 ```shell
 curl "http://api.local.host:5000/komunitas/users/1/comments?page=1"
+```
+
+OR
+
+```shell
+curl "http://api.local.host:5000/komunitas/users/jsavigny/comments?page=1"
 ```
 
 > Sample Response
@@ -485,8 +535,21 @@ Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
 
+OR
+
+```ruby
+PATCH komunitas/user/3/frozen
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
 ```shell
-curl -X PATCH "api.local.host:5000/komunitas/user/rahmanadianto"
+curl -X PATCH "api.local.host:5000/komunitas/user/rahmanadianto/frozen"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+
+```shell
+curl -X PATCH "api.local.host:5000/komunitas/user/3/frozen"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
@@ -533,10 +596,14 @@ Only moderators and admins can do this actions.
 
 ### HTTP Request
 
-`PATCH http://api.local.host:5000/komunitas/user/:username`
+`PATCH http://api.local.host:5000/komunitas/user/:username/frozen`
 
+OR
+
+`PATCH http://api.local.host:5000/komunitas/user/:id/frozen`
 ### URL Parameters
 
 Parameter |        |Description
 --------- | -------- |-----------
 `username` | required | username of the user
+`id` | required | id of the user
