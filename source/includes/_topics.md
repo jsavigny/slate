@@ -907,7 +907,7 @@ Parameter |        |Description
 --------- | -------- |-----------
 `:id` | required |id of the topic
 
-## Hide a topic
+## Unhide a topic
 
 > Sample Request
 
