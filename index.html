@@ -3020,6 +3020,131 @@ Only moderators and admins can do this actions.
 </tr>
 </tbody></table>
 
+          <h1 id="notifications">Notifications</h1>
+
+<h2 id="add-firebase-device">Add Firebase Device</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"token"</span><span class="p">:</span><span class="s2">"f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"http://api.local.host:5000/komunitas/notifications/firebase"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+      -d <span class="s2">"{
+            "</span>token<span class="s2">":"</span>f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj<span class="s2">"
+          }"</span>
+</code></pre>
+
+<blockquote>
+<p>Sample Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device ditambahkan"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Failure Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gagal menambahkan device"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>Add user&rsquo;s firebase device</p>
+
+<aside class="notice"> Requires Authentication </aside>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/notifications/firebase</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">token</code></td>
+<td>required</td>
+<td>registration token of the device</td>
+</tr>
+</tbody></table>
+
+<h2 id="logout-firebase-device">Logout Firebase Device</h2>
+
+<blockquote>
+<p>Sample Request</p>
+</blockquote>
+<pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span><span class="o">/</span><span class="n">logout</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
+</code></pre>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"token"</span><span class="p">:</span><span class="s2">"f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"http://api.local.host:5000/komunitas/notifications/firebase/logout"</span>
+      -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
+      -d <span class="s2">"{
+            "</span>token<span class="s2">":"</span>f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj<span class="s2">"
+          }"</span>
+</code></pre>
+
+<blockquote>
+<p>Sample Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device telah log out"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>Failure Response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ERROR"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gagal log out"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>Logout current user from current device.
+<aside class="notice"> Requires Authentication </aside></p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/notifications/firebase</code></p>
+
+<h3 id="url-parameters">URL Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th></th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">token</code></td>
+<td>required</td>
+<td>registration token of the device</td>
+</tr>
+</tbody></table>
+
       </div>
       <div class="dark-box">
           <div class="lang-selector">
