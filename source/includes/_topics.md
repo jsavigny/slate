@@ -851,3 +851,113 @@ Only moderators and administrators can do this action.
 Parameter |        |Description
 --------- | -------- |-----------
 `:id` | required |id of the topic
+
+## Hide a topic
+
+> Sample Request
+
+```ruby
+POST komunitas/topics/1/hiding
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X POST "api.local.host:5000/komunitas/topics/1/hiding"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Hide Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Topic Hidden"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to hide a topic for the current user.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`POST http://api.local.host:5000/komunitas/topics/:id/hiding`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
+
+## Hide a topic
+
+> Sample Request
+
+```ruby
+DELETE komunitas/topics/1/hiding
+Host: api.local.host:5000
+Authorization: Basic user_id:api_token
+```
+
+```shell
+curl -X DELETE "api.local.host:5000/komunitas/topics/1/hiding"
+      -u "1:RnLxZ69SP0tOmJoulmG7"
+```
+> Unide Success Response
+
+```json
+{
+  "status": "OK",
+  "message": "Topic Unhidden"
+}
+```
+
+> Authentication Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda harus login untuk mengakses halaman ini"
+}
+```
+
+> Unauthorized Error
+
+```json
+{
+  "status": "ERROR",
+  "message": "Anda tidak dapat mengakses halaman tersebut"
+}
+```
+
+This endpoint is used to unhide a hidden topic for the current user.
+<aside class="notice"> Requires Authentication </aside>
+
+
+### HTTP Request
+
+`DELETE http://api.local.host:5000/komunitas/topics/:id/hiding`
+
+### URL Parameters
+
+Parameter |        |Description
+--------- | -------- |-----------
+`:id` | required |id of the topic
