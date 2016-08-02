@@ -3089,7 +3089,7 @@ Only moderators and admins can do this actions.
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span><span class="o">/</span><span class="n">logout</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span><span class="o">/</span><span class="n">logout</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
@@ -3127,7 +3127,7 @@ Only moderators and admins can do this actions.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/notifications/firebase</code></p>
+<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/notifications/firebase/logout</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
