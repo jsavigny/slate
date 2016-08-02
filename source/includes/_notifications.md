@@ -64,7 +64,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-DELETE komunitas/notifications/firebase/logout
+PATCH komunitas/notifications/firebase/logout
 Host: api.local.host:5000
 Authorization: Basic user_id:api_token
 ```
@@ -107,7 +107,7 @@ Logout current user from current device.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/notifications/firebase`
+`PATCH http://api.local.host:5000/komunitas/notifications/firebase/logout`
 
 ### URL Parameters
 
