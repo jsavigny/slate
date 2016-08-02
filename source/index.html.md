@@ -14,6 +14,7 @@ includes:
   - tags
   - search
   - users
+  - notifications
 
 search: true
 ---
