@@ -6,11 +6,11 @@
 
 ```ruby
 GET komunitas/search?forum_search[q]=tes&forum_search[what]=all
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/search?forum_search[q]=death&forum_search[what]=all&page=1"
+curl "http://api.bukalapak.com/komunitas/search?forum_search[q]=death&forum_search[what]=all&page=1"
 ```
 
 > Sample Response

@@ -6,11 +6,11 @@
 
 ```ruby
 GET komunitas/tags
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/tags"
+curl "http://api.bukalapak.com/komunitas/tags"
 ```
 
 > Sample Response

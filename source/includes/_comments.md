@@ -6,11 +6,11 @@
 
 ```ruby
 GET komunitas/comments
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/comments"
+curl "http://api.bukalapak.com/komunitas/comments"
 ```
 
 > Sample Response
@@ -165,11 +165,11 @@ Parameter | Default | Description
 
 ```ruby
 GET komunitas/comments/235
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/comments/235"
+curl "http://api.bukalapak.com/komunitas/comments/235"
 ```
 
 > Sample Response
@@ -306,7 +306,7 @@ This endpoint retrieves a specific detailed comments, with its child comments (i
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas/comments/:id`
+`GET http://api.bukalapak.com/komunitas/comments/:id`
 
 ### URL Parameters
 
@@ -320,7 +320,7 @@ Parameter | Description
 
 ```ruby
 POST komunitas/comments
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 Content-Type Application/JSON
 ```
@@ -333,7 +333,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/topics"
+curl -X POST "api.bukalapak.com/komunitas/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1
@@ -369,7 +369,7 @@ curl -X POST "api.local.host:5000/komunitas/topics"
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/topics"
+curl -X POST "api.bukalapak.com/komunitas/topics"
         -d  '{
                 "comment":"What?",
                 "story_id":1,
@@ -432,7 +432,7 @@ This endpoint is used to create a comment, either by commenting a topic, or by r
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/comments/`
+`POST http://api.bukalapak.com/komunitas/comments/`
 
 ### URL Parameters
 
@@ -448,7 +448,7 @@ Parameter |        |Description
 
 ```ruby
 PATCH komunitas/comment/19
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 Content-Type Application/JSON
 ```
@@ -460,7 +460,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/comments/19"
+curl -X POST "api.bukalapak.com/komunitas/comments/19"
         -d  '{
                 "comment":"Edited"
              }'
@@ -516,7 +516,7 @@ A comment can be edited by the author of the comment if the comment is still rec
 
 ### HTTP Request
 
-`PATCH http://api.local.host:5000/komunitas/comments/:id`
+`PATCH http://api.bukalapak.com/komunitas/comments/:id`
 
 ### URL Parameters
 
@@ -531,7 +531,7 @@ Parameter |        |Description
 
 ```ruby
 DELETE komunitas/comments/1
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
@@ -542,7 +542,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X DELETE "api.local.host:5000/komunitas/topics/1"
+curl -X DELETE "api.bukalapak.com/komunitas/topics/1"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -589,7 +589,7 @@ A comment can be deleted by the author of the comment, or by moderators and admi
 
 ### HTTP Request
 
-`DELETE http://api.local.host:5000/komunitas/comments/:id`
+`DELETE http://api.bukalapak.com/komunitas/comments/:id`
 
 ### URL Parameters
 
@@ -604,12 +604,12 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/comments/1/restoration
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/comments/1/restoration"
+curl -X POST "api.bukalapak.com/komunitas/comments/1/restoration"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -655,7 +655,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/comments/:id/restoration`
+`POST http://api.bukalapak.com/komunitas/comments/:id/restoration`
 
 ### URL Parameters
 
@@ -669,12 +669,12 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/comments/1/upvotes
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/comments/1/upvotes"
+curl -X POST "api.bukalapak.com/komunitas/comments/1/upvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -701,7 +701,7 @@ This endpoint is used to upvote a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/comments/:id/upvotes`
+`POST http://api.bukalapak.com/komunitas/comments/:id/upvotes`
 
 ### URL Parameters
 
@@ -715,7 +715,7 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/comments/1/downvotes
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
@@ -726,7 +726,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/comments/1/downvotes"
+curl -X POST "api.bukalapak.com/komunitas/comments/1/downvotes"
       -d '{ "reason":"O" }'
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
@@ -772,7 +772,7 @@ This endpoint is used to downvote a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/comments/:id/downvotes`
+`POST http://api.bukalapak.com/komunitas/comments/:id/downvotes`
 
 ### URL Parameters
 
@@ -794,12 +794,12 @@ Parameter |        |Description
 
 ```ruby
 POST komunitas/comments/1/unvotes
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X POST "api.local.host:5000/komunitas/comments/1/unvotes"
+curl -X POST "api.bukalapak.com/komunitas/comments/1/unvotes"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -826,7 +826,7 @@ This endpoint is used to unvote (remove vote from) a comment.
 
 ### HTTP Request
 
-`POST http://api.local.host:5000/komunitas/comments/:id/unvotes`
+`POST http://api.bukalapak.com/komunitas/comments/:id/unvotes`
 
 ### URL Parameters
 

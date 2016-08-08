@@ -6,24 +6,24 @@
 
 ```ruby
 GET komunitas/users/juliosavigny
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 OR
 
 ```ruby
 GET komunitas/users/2
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/juliosavigny"
+curl "http://api.bukalapak.com/komunitas/users/juliosavigny"
 ```
 
 OR
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/2"
+curl "http://api.bukalapak.com/komunitas/users/2"
 ```
 
 > Sample Response
@@ -84,24 +84,24 @@ Parameter |        |Description
 
 ```ruby
 GET komunitas/users/1/topics?&page=1
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 OR
 
 ```ruby
 GET komunitas/users/jsavigny/topics?&page=1
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/1/topics?&page=1"
+curl "http://api.bukalapak.com/komunitas/users/1/topics?&page=1"
 ```
 
 OR
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/jsavigny/topics?&page=1"
+curl "http://api.bukalapak.com/komunitas/users/jsavigny/topics?&page=1"
 ```
 
 
@@ -297,11 +297,11 @@ This endpoint retrieves all topics posted by specific user.
 
 ### HTTP Request
 
-`GET http://api.local.host:5000/komunitas/users/:username/topics `
+`GET http://api.bukalapak.com/komunitas/users/:username/topics `
 
 OR
 
-`GET http://api.local.host:5000/komunitas/users/:id/topics `
+`GET http://api.bukalapak.com/komunitas/users/:id/topics `
 
 
 ### Query Parameters
@@ -318,24 +318,24 @@ Parameter | Default | Description
 
 ```ruby
 GET komunitas/users/jsavigny/comments?page=1
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 OR
 
 ```ruby
 GET komunitas/users/1/comments?page=1
-Host: api.local.host:5000
+Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/1/comments?page=1"
+curl "http://api.bukalapak.com/komunitas/users/1/comments?page=1"
 ```
 
 OR
 
 ```shell
-curl "http://api.local.host:5000/komunitas/users/jsavigny/comments?page=1"
+curl "http://api.bukalapak.com/komunitas/users/jsavigny/comments?page=1"
 ```
 
 > Sample Response
@@ -531,7 +531,7 @@ Parameter | Default | Description
 
 ```ruby
 PATCH komunitas/user/rahmanadianto
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
@@ -539,17 +539,17 @@ OR
 
 ```ruby
 PATCH komunitas/user/3/frozen
-Host: api.local.host:5000
+Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X PATCH "api.local.host:5000/komunitas/user/rahmanadianto/frozen"
+curl -X PATCH "api.bukalapak.com/komunitas/user/rahmanadianto/frozen"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
 ```shell
-curl -X PATCH "api.local.host:5000/komunitas/user/3/frozen"
+curl -X PATCH "api.bukalapak.com/komunitas/user/3/frozen"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 
@@ -596,11 +596,11 @@ Only moderators and admins can do this actions.
 
 ### HTTP Request
 
-`PATCH http://api.local.host:5000/komunitas/user/:username/frozen`
+`PATCH http://api.bukalapak.com/komunitas/user/:username/frozen`
 
 OR
 
-`PATCH http://api.local.host:5000/komunitas/user/:id/frozen`
+`PATCH http://api.bukalapak.com/komunitas/user/:id/frozen`
 ### URL Parameters
 
 Parameter |        |Description
