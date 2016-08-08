@@ -137,9 +137,9 @@
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics?filter</span><span class="o">=</span><span class="n">recent</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">tag</span><span class="o">=</span><span class="no">Semua</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/topics?filter=recent&amp;page=1&amp;tag=Semua"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/topics?filter=recent&amp;page=1&amp;tag=Semua"</span>
 </code></pre>
 
 <blockquote>
@@ -229,7 +229,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/topics</code></p>
+<p><code class="prettyprint">GET http://api.bukalapak.com/komunitas/topics</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -263,9 +263,9 @@
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/topics/1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/topics/1"</span>
 </code></pre>
 
 <blockquote>
@@ -339,7 +339,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/topics/:id</code></p>
+<p><code class="prettyprint">GET http://api.bukalapak.com/komunitas/topics/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -361,7 +361,7 @@
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 <span class="no">Content</span><span class="o">-</span><span class="no">Type</span> <span class="no">Application</span><span class="o">/</span><span class="no">JSON</span>
 </code></pre>
@@ -373,7 +373,7 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics"</span>
         -d  <span class="s1">'{
               "topic":{
                       "title":"Now I am become death",
@@ -421,7 +421,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -455,7 +455,7 @@
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="n">preview</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 <span class="no">Content</span><span class="o">-</span><span class="no">Type</span> <span class="no">Application</span><span class="o">/</span><span class="no">JSON</span>
 </code></pre>
@@ -467,7 +467,7 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics"</span>
         -d  <span class="s1">'{
               "topic":{
                       "title":"Now I am become death",
@@ -515,7 +515,7 @@
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -549,7 +549,7 @@
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
@@ -560,7 +560,7 @@
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.local.host:5000/komunitas/topics/1"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/topics/1"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
       -d  <span class="s1">'{
             "topic":{
@@ -627,7 +627,7 @@ A topic can be edited by the author of the topic if the topic is still recent, o
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/topics/:id</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/topics/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -665,15 +665,15 @@ A topic can be edited by the author of the topic if the topic is still recent, o
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">deletion</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"moderation_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reason"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.local.host:5000/komunitas/topics/1"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/topics/1/deletion"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
       -d  <span class="s1">'{
             "moderation_reason": "reason"
@@ -723,7 +723,7 @@ A topic can be deleted by moderators and administrators.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">DELETE http://api.local.host:5000/komunitas/topics/:id</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/topics/:id/deletion</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -751,11 +751,11 @@ A topic can be deleted by moderators and administrators.</p>
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">restoration</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">restoration</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/restoration"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/topics/1/restoration"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -810,7 +810,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/restoration</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/topics/:id/restoration</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -834,10 +834,10 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">upvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/upvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics/1/upvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -864,7 +864,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/upvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/:id/upvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -888,14 +888,14 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">downvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"reason"</span><span class="p">:</span><span class="s2">"O"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/downvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics/1/downvotes"</span>
       -d <span class="s1">'{ "reason":"O" }'</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
@@ -941,7 +941,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/downvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/:id/downvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -995,10 +995,10 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">unvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/unvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics/1/unvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1025,7 +1025,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/unvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/:id/unvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1049,10 +1049,10 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">sticky</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/sticky"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics/1/sticky"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1099,7 +1099,7 @@ Only moderators and administrators can do this action.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/sticky</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/:id/sticky</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1123,10 +1123,10 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">hiding</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics/1/hiding"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics/1/hiding"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1162,7 +1162,7 @@ Only moderators and administrators can do this action.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/topics/:id/hiding</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/topics/:id/hiding</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1186,10 +1186,10 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">hiding</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.local.host:5000/komunitas/topics/1/hiding"</span>
+<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.bukalapak.com/komunitas/topics/1/hiding"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1225,7 +1225,7 @@ Only moderators and administrators can do this action.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">DELETE http://api.local.host:5000/komunitas/topics/:id/hiding</code></p>
+<p><code class="prettyprint">DELETE http://api.bukalapak.com/komunitas/topics/:id/hiding</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1251,9 +1251,9 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/comments"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/comments"</span>
 </code></pre>
 
 <blockquote>
@@ -1420,9 +1420,9 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">235</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/comments/235"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/comments/235"</span>
 </code></pre>
 
 <blockquote>
@@ -1558,7 +1558,7 @@ Only moderators and administrators can do this action.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/comments/:id</code></p>
+<p><code class="prettyprint">GET http://api.bukalapak.com/komunitas/comments/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1580,7 +1580,7 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 <span class="no">Content</span><span class="o">-</span><span class="no">Type</span> <span class="no">Application</span><span class="o">/</span><span class="no">JSON</span>
 </code></pre>
@@ -1589,7 +1589,7 @@ Only moderators and administrators can do this action.
     </span><span class="nt">"story_id"</span><span class="p">:</span><span class="mi">1</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics"</span>
         -d  <span class="s1">'{
                 "comment":"What?",
                 "story_id":1
@@ -1622,7 +1622,7 @@ Only moderators and administrators can do this action.
 
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/topics"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/topics"</span>
         -d  <span class="s1">'{
                 "comment":"What?",
                 "story_id":1,
@@ -1687,7 +1687,7 @@ Only moderators and administrators can do this action.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/comments/</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/comments/</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1721,7 +1721,7 @@ Only moderators and administrators can do this action.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comment</span><span class="o">/</span><span class="mi">19</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 <span class="no">Content</span><span class="o">-</span><span class="no">Type</span> <span class="no">Application</span><span class="o">/</span><span class="no">JSON</span>
 </code></pre>
@@ -1729,7 +1729,7 @@ Only moderators and administrators can do this action.
     </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"Edited"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/comments/19"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/19"</span>
         -d  <span class="s1">'{
                 "comment":"Edited"
              }'</span>
@@ -1784,7 +1784,7 @@ A comment can be edited by the author of the comment if the comment is still rec
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/comments/:id</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/comments/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1813,14 +1813,14 @@ A comment can be edited by the author of the comment if the comment is still rec
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"moderation_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reason"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.local.host:5000/komunitas/topics/1"</span>
+<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.bukalapak.com/komunitas/topics/1"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1867,7 +1867,7 @@ A comment can be deleted by the author of the comment, or by moderators and admi
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">DELETE http://api.local.host:5000/komunitas/comments/:id</code></p>
+<p><code class="prettyprint">DELETE http://api.bukalapak.com/komunitas/comments/:id</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1896,10 +1896,10 @@ A comment can be deleted by the author of the comment, or by moderators and admi
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">restoration</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/comments/1/restoration"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/1/restoration"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1945,7 +1945,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/comments/:id/restoration</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/comments/:id/restoration</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -1969,10 +1969,10 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">upvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/comments/1/upvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/1/upvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1999,7 +1999,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/comments/:id/upvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/comments/:id/upvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -2023,14 +2023,14 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">downvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"reason"</span><span class="p">:</span><span class="s2">"O"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/comments/1/downvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/1/downvotes"</span>
       -d <span class="s1">'{ "reason":"O" }'</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
@@ -2076,7 +2076,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/comments/:id/downvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/comments/:id/downvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -2130,10 +2130,10 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">unvotes</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.local.host:5000/komunitas/comments/1/unvotes"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/1/unvotes"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -2160,7 +2160,7 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/comments/:id/unvotes</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/comments/:id/unvotes</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -2186,9 +2186,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">tags</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/tags"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/tags"</span>
 </code></pre>
 
 <blockquote>
@@ -2226,9 +2226,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">search?forum_search</span><span class="p">[</span><span class="n">q</span><span class="p">]</span><span class="o">=</span><span class="n">tes</span><span class="o">&amp;</span><span class="n">forum_search</span><span class="p">[</span><span class="n">what</span><span class="p">]</span><span class="o">=</span><span class="n">all</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/search?forum_search[q]=death&amp;forum_search[what]=all&amp;page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/search?forum_search[q]=death&amp;forum_search[what]=all&amp;page=1"</span>
 </code></pre>
 
 <blockquote>
@@ -2389,18 +2389,18 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">juliosavigny</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 
 <p>OR</p>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">2</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/juliosavigny"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/juliosavigny"</span>
 </code></pre>
 
 <p>OR</p>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/2"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/2"</span>
 </code></pre>
 
 <blockquote>
@@ -2473,18 +2473,18 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">topics?</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 
 <p>OR</p>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">jsavigny</span><span class="o">/</span><span class="n">topics?</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/1/topics?&amp;page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/1/topics?&amp;page=1"</span>
 </code></pre>
 
 <p>OR</p>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/jsavigny/topics?&amp;page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/jsavigny/topics?&amp;page=1"</span>
 </code></pre>
 
 <blockquote>
@@ -2678,11 +2678,11 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/users/:username/topics</code></p>
+<p><code class="prettyprint">GET http://api.bukalapak.com/komunitas/users/:username/topics</code></p>
 
 <p>OR</p>
 
-<p><code class="prettyprint">GET http://api.local.host:5000/komunitas/users/:id/topics</code></p>
+<p><code class="prettyprint">GET http://api.bukalapak.com/komunitas/users/:id/topics</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -2716,18 +2716,18 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">jsavigny</span><span class="o">/</span><span class="n">comments?page</span><span class="o">=</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 
 <p>OR</p>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">comments?page</span><span class="o">=</span><span class="mi">1</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/1/comments?page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/1/comments?page=1"</span>
 </code></pre>
 
 <p>OR</p>
-<pre class="highlight shell"><code>curl <span class="s2">"http://api.local.host:5000/komunitas/users/jsavigny/comments?page=1"</span>
+<pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/jsavigny/comments?page=1"</span>
 </code></pre>
 
 <blockquote>
@@ -2935,19 +2935,19 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">rahmanadianto</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 
 <p>OR</p>
 <pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="mi">3</span><span class="o">/</span><span class="n">frozen</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.local.host:5000/komunitas/user/rahmanadianto/frozen"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/user/rahmanadianto/frozen"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
-<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.local.host:5000/komunitas/user/3/frozen"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/user/3/frozen"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -2993,11 +2993,11 @@ Only moderators and admins can do this actions.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/user/:username/frozen</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/user/:username/frozen</code></p>
 
 <p>OR</p>
 
-<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/user/:id/frozen</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/user/:id/frozen</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -3028,14 +3028,14 @@ Only moderators and admins can do this actions.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"token"</span><span class="p">:</span><span class="s2">"f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"http://api.local.host:5000/komunitas/notifications/firebase"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"http://api.bukalapak.com/komunitas/notifications/firebase"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
       -d <span class="s2">"{
             "</span>token<span class="s2">":"</span>f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj<span class="s2">"
@@ -3066,7 +3066,7 @@ Only moderators and admins can do this actions.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://api.local.host:5000/komunitas/notifications/firebase</code></p>
+<p><code class="prettyprint">POST http://api.bukalapak.com/komunitas/notifications/firebase</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -3090,14 +3090,14 @@ Only moderators and admins can do this actions.
 <p>Sample Request</p>
 </blockquote>
 <pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">notifications</span><span class="o">/</span><span class="n">firebase</span><span class="o">/</span><span class="n">logout</span>
-<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">local</span><span class="p">.</span><span class="nf">host</span><span class="p">:</span><span class="mi">5000</span>
+<span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
   </span><span class="nt">"token"</span><span class="p">:</span><span class="s2">"f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"http://api.local.host:5000/komunitas/notifications/firebase/logout"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"http://api.bukalapak.com/komunitas/notifications/firebase/logout"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
       -d <span class="s2">"{
             "</span>token<span class="s2">":"</span>f0pS3cCaJu4:APA91bEzh7Nq3T9sY-j6Oh4ttxgim-9dZS6_97isUWnrhAVxHct3nT3iyy-Kb7Ka4JjGVD3Ha6BzE9awd3M5m2Fnz5Io_cimIkyJEWdHgTtVjGoGsGcV_mUIjjae__RCgjZZ_2CZcZEj<span class="s2">"
@@ -3127,7 +3127,7 @@ Only moderators and admins can do this actions.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PATCH http://api.local.host:5000/komunitas/notifications/firebase/logout</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/notifications/firebase/logout</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
