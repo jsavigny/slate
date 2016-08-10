@@ -460,7 +460,7 @@ Content-Type Application/JSON
 ```
 
 ```shell
-curl -X POST "api.bukalapak.com/komunitas/comments/19"
+curl -X PATCH "api.bukalapak.com/komunitas/comments/19"
         -d  '{
                 "comment":"Edited"
              }'
@@ -530,7 +530,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-DELETE komunitas/comments/1
+PATCH komunitas/comments/1/deletion
 Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
@@ -542,7 +542,7 @@ Authorization: Basic user_id:api_token
 ```
 
 ```shell
-curl -X DELETE "api.bukalapak.com/komunitas/topics/1"
+curl -X POST "api.bukalapak.com/komunitas/comments/1/deletion"
       -u "1:RnLxZ69SP0tOmJoulmG7"
 ```
 > Success Response
@@ -589,7 +589,7 @@ A comment can be deleted by the author of the comment, or by moderators and admi
 
 ### HTTP Request
 
-`DELETE http://api.bukalapak.com/komunitas/comments/:id`
+`PATCH http://api.bukalapak.com/komunitas/comments/:id/deletion`
 
 ### URL Parameters
 
