@@ -1729,7 +1729,7 @@ Only moderators and administrators can do this action.
     </span><span class="nt">"comment"</span><span class="p">:</span><span class="s2">"Edited"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/19"</span>
+<pre class="highlight shell"><code>curl -X PATCH <span class="s2">"api.bukalapak.com/komunitas/comments/19"</span>
         -d  <span class="s1">'{
                 "comment":"Edited"
              }'</span>
@@ -1812,7 +1812,7 @@ A comment can be edited by the author of the comment if the comment is still rec
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">DELETE</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">comments</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">deletion</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
@@ -1820,7 +1820,7 @@ A comment can be edited by the author of the comment if the comment is still rec
     </span><span class="nt">"moderation_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reason"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<pre class="highlight shell"><code>curl -X DELETE <span class="s2">"api.bukalapak.com/komunitas/topics/1"</span>
+<pre class="highlight shell"><code>curl -X POST <span class="s2">"api.bukalapak.com/komunitas/comments/1/deletion"</span>
       -u <span class="s2">"1:RnLxZ69SP0tOmJoulmG7"</span>
 </code></pre>
 
@@ -1867,7 +1867,7 @@ A comment can be deleted by the author of the comment, or by moderators and admi
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">DELETE http://api.bukalapak.com/komunitas/comments/:id</code></p>
+<p><code class="prettyprint">PATCH http://api.bukalapak.com/komunitas/comments/:id/deletion</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
