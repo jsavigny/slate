@@ -21,6 +21,136 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
   "status": "OK",
   "topics": [
     {
+      "id": 50,
+      "title": "Deeplink test",
+      "url": "http://komunitas.staging.vm:5000/s/juiegl/deeplink_test",
+      "created_at": "2016-08-12T11:13:28.000+07:00",
+      "updated_at": "2016-08-12T11:13:28.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 1,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 1
+      },
+      "tags": [
+        {
+          "tag": "Berita",
+          "description": "Berbagi informasi terbaru yang sedang hangat-hangatnya"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Markeddown",
+      "url": "http://komunitas.staging.vm:5000/s/xlooz5/markeddown",
+      "created_at": "2016-08-12T11:05:01.000+07:00",
+      "updated_at": "2016-08-12T11:05:01.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Test to device",
+      "url": "http://komunitas.staging.vm:5000/s/nkoq5t/test_to_device",
+      "created_at": "2016-08-12T11:00:39.000+07:00",
+      "updated_at": "2016-08-12T11:00:39.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 1
+      },
+      "tags": [
+        {
+          "tag": "Ide & Masalah Fitur",
+          "description": "Sampaikan bug/error"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Test from device",
+      "url": "http://komunitas.staging.vm:5000/s/ldrwuo/test_from_device",
+      "created_at": "2016-08-12T10:59:47.000+07:00",
+      "updated_at": "2016-08-12T10:59:47.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Gadget",
+          "description": "All about gadget!"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Tes ios fcm",
+      "url": "http://komunitas.staging.vm:5000/s/bx1h6k/tes_ios_fcm",
+      "created_at": "2016-08-12T09:12:21.000+07:00",
+      "updated_at": "2016-08-12T09:12:21.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 5,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Gadget",
+          "description": "All about gadget!"
+        }
+      ]
+    },
+    {
       "id": 44,
       "title": "Markeddown",
       "url": "http://komunitas.staging.vm:5000/s/xzowv6/markeddown",
@@ -59,7 +189,7 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
       "upvotes": 2,
       "downvotes": 0,
       "vote": null,
-      "comments_count": 3,
+      "comments_count": 7,
       "is_sticky": false,
       "is_editable": false,
       "is_gone": false,
@@ -101,144 +231,6 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
           "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
         }
       ]
-    },
-    {
-      "id": 38,
-      "title": "Engineering at Bukalapak",
-      "url": "http://komunitas.staging.vm:5000/s/gaskpc/engineering_at_bukalapak",
-      "created_at": "2016-08-11T13:40:44.000+07:00",
-      "updated_at": "2016-08-11T14:47:56.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 16,
-      "is_sticky": false,
-      "is_editable": false,
-      "is_gone": false,
-      "is_undeletable": false,
-      "user": {
-        "username": "juliosavigny",
-        "id": 517,
-        "karma": 0
-      },
-      "tags": [
-        {
-          "tag": "Komputer",
-          "description": "Berbagi seputar dunia komputer, laptop, dan turunannya."
-        },
-        {
-          "tag": "Video",
-          "description": "Video terkait Bukalapak.com"
-        }
-      ]
-    },
-    {
-      "id": 37,
-      "title": "lingling",
-      "url": "http://komunitas.staging.vm:5000/s/sxa5e6/lingling",
-      "created_at": "2016-08-11T11:53:43.000+07:00",
-      "updated_at": "2016-08-11T14:48:26.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 2,
-      "is_sticky": false,
-      "is_editable": false,
-      "is_gone": false,
-      "is_undeletable": false,
-      "user": {
-        "username": "juliosavigny",
-        "id": 517,
-        "karma": 0
-      },
-      "tags": [
-        {
-          "tag": "Ide & Masalah Fitur",
-          "description": "Sampaikan bug/error"
-        }
-      ]
-    },
-    {
-      "id": 36,
-      "title": "Quinsy Cantik Sekali",
-      "url": "http://komunitas.staging.vm:5000/s/mimrhv/quinsy_cantik_sekali",
-      "created_at": "2016-08-11T11:37:22.000+07:00",
-      "updated_at": "2016-08-11T11:37:22.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 17,
-      "is_sticky": false,
-      "is_editable": false,
-      "is_gone": false,
-      "is_undeletable": false,
-      "user": {
-        "username": "quinsythecat",
-        "id": 519,
-        "karma": 0
-      },
-      "tags": [
-        {
-          "tag": "Inspirasi Wirausaha",
-          "description": "Cerita, pengalaman, atau artikel yang memotivasi dan menginspirasi kita semua"
-        },
-        {
-          "tag": "Tips & Trik Jualan",
-          "description": "Tips & Trik Jualan Online"
-        }
-      ]
-    },
-    {
-      "id": 35,
-      "title": "Nested",
-      "url": "http://komunitas.staging.vm:5000/s/2w9grl/nested",
-      "created_at": "2016-08-11T11:30:09.000+07:00",
-      "updated_at": "2016-08-11T13:23:50.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 0,
-      "is_sticky": false,
-      "is_editable": false,
-      "is_gone": false,
-      "is_undeletable": false,
-      "user": {
-        "username": "ragapinilih",
-        "id": 1,
-        "karma": 2
-      },
-      "tags": [
-        {
-          "tag": "Ide & Masalah Fitur",
-          "description": "Sampaikan bug/error"
-        }
-      ]
-    },
-    {
-      "id": 34,
-      "title": "Emoji test",
-      "url": "http://komunitas.staging.vm:5000/s/rxnb15/emoji_test",
-      "created_at": "2016-08-11T11:04:24.000+07:00",
-      "updated_at": "2016-08-11T11:04:24.000+07:00",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": null,
-      "comments_count": 0,
-      "is_sticky": false,
-      "is_editable": false,
-      "is_gone": false,
-      "is_undeletable": false,
-      "user": {
-        "username": "ragapinilih",
-        "id": 1,
-        "karma": 2
-      },
-      "tags": [
-        {
-          "tag": "Ide & Masalah Fitur",
-          "description": "Sampaikan bug/error"
-        }
-      ]
     }
   ],
   "sticky_topics": [
@@ -251,7 +243,7 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
       "upvotes": 1,
       "downvotes": 0,
       "vote": null,
-      "comments_count": 2,
+      "comments_count": 3,
       "is_sticky": true,
       "is_editable": false,
       "is_gone": false,
@@ -333,7 +325,7 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
       "upvotes": 1,
       "downvotes": 0,
       "vote": null,
-      "comments_count": 0,
+      "comments_count": 2,
       "is_sticky": true,
       "is_editable": false,
       "is_gone": false,
@@ -363,7 +355,7 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
       "upvotes": 1,
       "downvotes": 0,
       "vote": null,
-      "comments_count": 0,
+      "comments_count": 5,
       "is_sticky": true,
       "is_editable": false,
       "is_gone": false,
@@ -405,12 +397,12 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET komunitas/topics/1
+GET komunitas/topics/15
 Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.bukalapak.com/komunitas/topics/1"
+curl "http://api.bukalapak.com/komunitas/topics/15"
 ```
 
 > Sample Response
@@ -419,51 +411,59 @@ curl "http://api.bukalapak.com/komunitas/topics/1"
 {
   "status": "OK",
   "topic": {
-    "description": "Don't make it bad.",
-    "markeddown_description": "<p>Don&rsquo;t make it bad.</p>\n",
-    "id": 92,
-    "title": "Hey Jude!",
-    "created_at": "2016-07-26T09:27:27.000+07:00",
-    "updated_at": "2016-07-26T09:27:27.000+07:00",
+    "description": "Kopdar Komunitas BL Palembang\r\n\r\nTopik: Bedah Lapak: Kiat2 memaksimalkan penggunaan lapak Anda\r\n\r\nWaktu: 14 Agustus 2016, Jam 3.30 Sore\r\n\r\nTempat: Bimbel dolphin Cb3\r\n\r\nJl. Sultan M Mansyur No. 7\r\n\r\nBukit siguntang\r\n\r\nCP: Halim 081918801525. Yadi 089622222011",
+    "markeddown_description": "<p>Kopdar Komunitas BL Palembang</p>\n\n<p>Topik: Bedah Lapak: Kiat2 memaksimalkan penggunaan lapak Anda</p>\n\n<p>Waktu: 14 Agustus 2016, Jam 3.30 Sore</p>\n\n<p>Tempat: Bimbel dolphin Cb3</p>\n\n<p>Jl. Sultan M Mansyur No. 7</p>\n\n<p>Bukit siguntang</p>\n\n<p>CP: Halim 081918801525. Yadi 089622222011</p>\n",
+    "id": 15,
+    "title": "[Undangan] Kopdar BL Komunitas Palembang. BEDAH LAPAK: KIAT KIAT MEMAKSIMALKAN LAPAK ANDA",
+    "url": "http://komunitas.staging.vm:5000/s/aeezfl/undangan_kopdar_bl_komunitas_palembang_bedah_lapak_kiat_kiat_memaksimalkan_lapak_anda",
+    "created_at": "2016-08-11T09:58:35.000+07:00",
+    "updated_at": "2016-08-11T09:58:37.000+07:00",
     "upvotes": 1,
     "downvotes": 0,
-    "vote": 1,
-    "comments_count": 5,
-    "is_editable": true,
+    "vote": null,
+    "can_downvote": null,
+    "comments_count": 2,
+    "is_editable": false,
     "is_gone": false,
-    "is_undeletable": true,
+    "is_undeletable": false,
+    "is_sticky": true,
     "user": {
-      "username": "rahmanadianto",
-      "id": 3,
-      "karma": 19
+      "username": "ragapinilih",
+      "id": 1,
+      "karma": 2
     },
     "tags": [
       {
-        "tag": "Kamera",
-        "description": "Double tap to love"
+        "tag": "Berita",
+        "description": "Berbagi informasi terbaru yang sedang hangat-hangatnya"
+      },
+      {
+        "tag": "Event",
+        "description": "tentang event komunitas Bukalapak"
       }
     ]
   },
   "comments": [
     {
-      "id": 235,
-      "comment": "Take a sad song..",
-      "markeddown_comment": "<p>Take a sad song..</p>\n",
+      "id": 127,
+      "comment": "@juliosavigny",
+      "markeddown_comment": "<p><a href=\"/u/juliosavigny\">@juliosavigny</a></p>\n",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
-      "created_at": "2016-07-26T09:31:51.000+07:00",
-      "updated_at": "2016-07-26T09:31:51.000+07:00",
+      "vote": null,
+      "can_downvote": null,
+      "created_at": "2016-08-12T09:22:46.000+07:00",
+      "updated_at": "2016-08-12T09:22:46.000+07:00",
       "parent_comment_id": null,
-      "is_editable": true,
-      "is_deletable": true,
-      "is_undeletable": true,
+      "is_editable": false,
+      "is_deletable": false,
+      "is_undeletable": false,
       "is_gone": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2,
+        "avatar": "http://www.staging.vm:5000/system4/avatars/8/small/UjU1ts0_.jpg"
       }
     }
   ],

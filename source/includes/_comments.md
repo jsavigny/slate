@@ -21,129 +21,208 @@ curl "http://api.bukalapak.com/komunitas/comments"
   "status": "OK",
   "comments": [
     {
-      "id": 239,
-      "comment": "Combo BREAKERRRRR",
-      "markeddown_comment": "<p>Combo BREAKERRRRR</p>\n",
-      "created_at": "2016-07-26T09:33:00.000+07:00",
-      "updated_at": "2016-07-26T09:33:00.000+07:00",
+      "id": 138,
+      "comment": "YAA @jsavigny",
+      "markeddown_comment": "<p>YAA <a href=\"/u/jsavigny\">@jsavigny</a></p>\n",
+      "created_at": "2016-08-12T15:26:15.000+07:00",
+      "updated_at": "2016-08-12T15:26:15.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "can_downvote": true,
+      "vote": null,
       "is_gone": false,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 1,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Hey Jude!",
-        "id": 92
+        "title": "Topik Mention FCM",
+        "id": 43
       }
     },
     {
-      "id": 238,
-      "comment": "Then you can start, to make it better..",
-      "markeddown_comment": "<p>Then you can start, to make it better..</p>\n",
-      "created_at": "2016-07-26T09:32:54.000+07:00",
-      "updated_at": "2016-07-26T09:32:54.000+07:00",
+      "id": 137,
+      "comment": "@jsavigny",
+      "markeddown_comment": "<p><a href=\"/u/jsavigny\">@jsavigny</a></p>\n",
+      "created_at": "2016-08-12T15:25:20.000+07:00",
+      "updated_at": "2016-08-12T15:25:20.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "can_downvote": true,
+      "vote": null,
       "is_gone": false,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 1,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Hey Jude!",
-        "id": 92
+        "title": "Topik Mention FCM",
+        "id": 43
       }
     },
     {
-      "id": 237,
-      "comment": "Remember, to let her into your heart.",
-      "markeddown_comment": "<p>Remember, to let her into your heart.</p>\n",
-      "created_at": "2016-07-26T09:32:36.000+07:00",
-      "updated_at": "2016-07-26T09:32:36.000+07:00",
+      "id": 136,
+      "comment": "mantap",
+      "markeddown_comment": "<p>mantap</p>\n",
+      "created_at": "2016-08-12T13:17:00.000+07:00",
+      "updated_at": "2016-08-12T13:17:00.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "can_downvote": true,
+      "vote": null,
       "is_gone": false,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Hey Jude!",
-        "id": 92
+        "title": "Riwayat Pemotongan Budget Promoted Push Tidak Informatif?",
+        "id": 14
       }
     },
     {
-      "id": 236,
-      "comment": "And make it better..",
-      "markeddown_comment": "<p>And make it better..</p>\n",
-      "created_at": "2016-07-26T09:31:59.000+07:00",
-      "updated_at": "2016-07-26T09:31:59.000+07:00",
+      "id": 135,
+      "comment": "sans",
+      "markeddown_comment": "<p>sans</p>\n",
+      "created_at": "2016-08-12T13:16:32.000+07:00",
+      "updated_at": "2016-08-12T13:16:32.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "can_downvote": true,
+      "vote": null,
       "is_gone": false,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Hey Jude!",
-        "id": 92
+        "title": "Riwayat Pemotongan Budget Promoted Push Tidak Informatif?",
+        "id": 14
       }
     },
     {
-      "id": 235,
-      "comment": "Take a sad song..",
-      "markeddown_comment": "<p>Take a sad song..</p>\n",
-      "created_at": "2016-07-26T09:31:51.000+07:00",
-      "updated_at": "2016-07-26T09:31:51.000+07:00",
+      "id": 134,
+      "comment": "@jsavigny",
+      "markeddown_comment": "<p><a href=\"/u/jsavigny\">@jsavigny</a></p>\n",
+      "created_at": "2016-08-12T11:25:50.000+07:00",
+      "updated_at": "2016-08-12T11:25:50.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "can_downvote": true,
+      "vote": null,
       "is_gone": false,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "quinsythecat",
+        "id": 519,
+        "karma": 0,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       },
       "topic": {
-        "title": "Hey Jude!",
-        "id": 92
+        "title": "Riwayat Pemotongan Budget Promoted Push Tidak Informatif?",
+        "id": 14
+      }
+    },
+    {
+      "id": 133,
+      "comment": "kucing @jsavigny",
+      "markeddown_comment": "<p>kucing <a href=\"/u/jsavigny\">@jsavigny</a></p>\n",
+      "created_at": "2016-08-12T11:24:43.000+07:00",
+      "updated_at": "2016-08-12T11:24:43.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "can_downvote": true,
+      "vote": null,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "user": {
+        "username": "quinsythecat",
+        "id": 519,
+        "karma": 0,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Riwayat Pemotongan Budget Promoted Push Tidak Informatif?",
+        "id": 14
+      }
+    },
+    {
+      "id": 132,
+      "comment": "https://komunitas.bukalapak.com/s/q2sran/ini_dia_pemenang_kontes_menulis_serunya_kopdar_bareng_komunitas_bukalapak_periode_juli",
+      "markeddown_comment": "<p><a href=\"https://komunitas.bukalapak.com/s/q2sran/ini_dia_pemenang_kontes_menulis_serunya_kopdar_bareng_komunitas_bukalapak_periode_juli\" target=\"_blank\" rel=\"nofollow\">https://komunitas.bukalapak.com/s/q2sran/ini_dia_pemenang_kontes_menulis_serunya_kopdar_bareng_komunitas_bukalapak_periode_juli</a></p>\n",
+      "created_at": "2016-08-12T11:14:01.000+07:00",
+      "updated_at": "2016-08-12T11:14:01.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "can_downvote": true,
+      "vote": null,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "user": {
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 1,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Deeplink test",
+        "id": 50
+      }
+    },
+    {
+      "id": 131,
+      "comment": "josgandos!",
+      "markeddown_comment": "<p>josgandos!</p>\n",
+      "created_at": "2016-08-12T11:07:02.000+07:00",
+      "updated_at": "2016-08-12T11:07:02.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "can_downvote": true,
+      "vote": null,
+      "is_gone": false,
+      "is_editable": true,
+      "is_deletable": true,
+      "is_undeletable": true,
+      "user": {
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
+      },
+      "topic": {
+        "title": "Masih Ada Aja Pembeli Yang Marah-Marah di Forum Komunitas Gara-Gara Barang Belum Nyampai",
+        "id": 19
       }
     }
   ],
   "message": "Comments"
-}
-```
+}```
 
 
 This endpoint retrieves all comments.
@@ -164,12 +243,12 @@ Parameter | Default | Description
 > Sample Request
 
 ```ruby
-GET komunitas/comments/235
+GET komunitas/comments/42
 Host: api.bukalapak.com
 ```
 
 ```shell
-curl "http://api.bukalapak.com/komunitas/comments/235"
+curl "http://api.bukalapak.com/komunitas/comments/42"
 ```
 
 > Sample Response
@@ -178,113 +257,52 @@ curl "http://api.bukalapak.com/komunitas/comments/235"
 {
   "status": "OK",
   "comment": {
-    "id": 235,
-    "comment": "Take a sad song..",
-    "markeddown_comment": "<p>Take a sad song..</p>\n",
-    "upvotes": 1,
+    "id": 42,
+    "comment": "Iya nih, mari jadi smart buyer!",
+    "markeddown_comment": "<p>Iya nih, mari jadi smart buyer!</p>\n",
+    "upvotes": 2,
     "downvotes": 0,
-    "vote": 1,
-    "created_at": "2016-07-26T09:31:51.000+07:00",
-    "updated_at": "2016-07-26T09:31:51.000+07:00",
+    "vote": null,
+    "can_downvote": true,
+    "created_at": "2016-08-11T10:13:37.000+07:00",
+    "updated_at": "2016-08-11T10:13:37.000+07:00",
     "parent_comment_id": null,
     "is_editable": true,
     "is_deletable": true,
     "is_undeletable": true,
     "is_gone": false,
     "user": {
-      "username": "rahmanadianto",
-      "id": 3,
-      "karma": 19,
-      "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+      "username": "juliosavigny",
+      "id": 517,
+      "karma": 1,
+      "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
     },
     "topic": {
-      "title": "Hey Jude!",
-      "id": 92
+      "title": "Masih Ada Aja Pembeli Yang Marah-Marah di Forum Komunitas Gara-Gara Barang Belum Nyampai",
+      "id": 19
     }
   },
   "child_comments": [
     {
-      "id": 236,
-      "comment": "And make it better..",
-      "markeddown_comment": "<p>And make it better..</p>\n",
+      "id": 131,
+      "comment": "josgandos!",
+      "markeddown_comment": "<p>josgandos!</p>\n",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
-      "created_at": "2016-07-26T09:31:59.000+07:00",
-      "updated_at": "2016-07-26T09:31:59.000+07:00",
-      "parent_comment_id": 235,
-      "is_editable": true,
-      "is_deletable": true,
-      "is_undeletable": true,
-      "is_gone": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
-      }
-    },
-    {
-      "id": 237,
-      "comment": "Remember, to let her into your heart.",
-      "markeddown_comment": "<p>Remember, to let her into your heart.</p>\n",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": 1,
-      "created_at": "2016-07-26T09:32:36.000+07:00",
-      "updated_at": "2016-07-26T09:32:36.000+07:00",
-      "parent_comment_id": 236,
-      "is_editable": true,
-      "is_deletable": true,
-      "is_undeletable": true,
-      "is_gone": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
-      }
-    },
-    {
-      "id": 238,
-      "comment": "Then you can start, to make it better..",
-      "markeddown_comment": "<p>Then you can start, to make it better..</p>\n",
-      "upvotes": 1,
-      "downvotes": 0,
-      "vote": 1,
-      "created_at": "2016-07-26T09:32:54.000+07:00",
-      "updated_at": "2016-07-26T09:32:54.000+07:00",
-      "parent_comment_id": 237,
-      "is_editable": true,
-      "is_deletable": true,
-      "is_undeletable": true,
-      "is_gone": false,
-      "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
-      }
-    },
-    {
-      "id": 239,
-      "comment": "Comment removed by author",
-      "markeddown_comment": "Comment removed by author",
-      "upvotes": null,
-      "downvotes": null,
       "vote": null,
-      "created_at": "2016-07-26T09:33:00.000+07:00",
-      "updated_at": "2016-07-26T09:33:00.000+07:00",
-      "parent_comment_id": 238,
+      "can_downvote": true,
+      "created_at": "2016-08-12T11:07:02.000+07:00",
+      "updated_at": "2016-08-12T11:07:02.000+07:00",
+      "parent_comment_id": 42,
       "is_editable": true,
       "is_deletable": true,
       "is_undeletable": true,
-      "is_gone": true,
+      "is_gone": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19,
-        "avatar": "http://www.local.host:5000/images/default_avatar/small/default.jpg"
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2,
+        "avatar": "http://www.staging.vm:5000/images/default_avatar/small/default.jpg"
       }
     }
   ],
