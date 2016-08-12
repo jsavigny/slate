@@ -21,74 +21,362 @@ curl "http://api.bukalapak.com/komunitas/topics?filter=recent&page=1&tag=Semua"
   "status": "OK",
   "topics": [
     {
-      "id": 92,
-      "title": "Hey Jude!",
-      "created_at": "2016-07-26T09:27:27.000+07:00",
-      "updated_at": "2016-07-26T09:27:27.000+07:00",
+      "id": 44,
+      "title": "Markeddown",
+      "url": "http://komunitas.staging.vm:5000/s/xzowv6/markeddown",
+      "created_at": "2016-08-11T20:46:28.000+07:00",
+      "updated_at": "2016-08-11T23:05:20.000+07:00",
       "upvotes": 1,
       "downvotes": 0,
-      "vote": 1,
+      "vote": null,
       "comments_count": 0,
       "is_sticky": false,
-      "is_editable": true,
+      "is_editable": false,
+      "is_gone": false,
       "is_undeletable": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
       },
       "tags": [
         {
-          "tag": "Kamera",
-          "description": "Double tap to love"
+          "tag": "Pengumuman",
+          "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
+        },
+        {
+          "tag": "belanja",
+          "description": "Curabitur turpis. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Ut a nisl id ante tempus hendrerit."
         }
       ]
     },
     {
-      "id": 87,
-      "title": "Coba Updated",
-      "created_at": "2016-07-25T12:48:58.000+07:00",
-      "updated_at": "2016-07-25T12:49:08.000+07:00",
-      "upvotes": 1,
+      "id": 43,
+      "title": "Topik Mention FCM",
+      "url": "http://komunitas.staging.vm:5000/s/bqygkp/topik_mention_fcm",
+      "created_at": "2016-08-11T19:33:10.000+07:00",
+      "updated_at": "2016-08-11T19:33:10.000+07:00",
+      "upvotes": 2,
       "downvotes": 0,
-      "vote": 1,
-      "comments_count": 0,
+      "vote": null,
+      "comments_count": 3,
       "is_sticky": false,
       "is_editable": false,
+      "is_gone": false,
       "is_undeletable": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2
       },
       "tags": [
         {
-          "tag": "Video",
-          "description": "Bukan XXX"
+          "tag": "Komputer",
+          "description": "Berbagi seputar dunia komputer, laptop, dan turunannya."
         }
       ]
     },
     {
-      "id": 82,
-      "title": "Rest Updated",
-      "created_at": "2016-07-25T11:25:18.000+07:00",
-      "updated_at": "2016-07-25T11:25:32.000+07:00",
-      "upvotes": 1,
+      "id": 41,
+      "title": "Tifani",
+      "url": "http://komunitas.staging.vm:5000/s/qcxrw5/tifani",
+      "created_at": "2016-08-11T16:49:10.000+07:00",
+      "updated_at": "2016-08-11T16:49:10.000+07:00",
+      "upvotes": 0,
       "downvotes": 0,
-      "vote": 1,
+      "vote": null,
       "comments_count": 0,
       "is_sticky": false,
       "is_editable": false,
+      "is_gone": false,
       "is_undeletable": false,
       "user": {
-        "username": "rahmanadianto",
-        "id": 3,
-        "karma": 19
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
       },
       "tags": [
         {
+          "tag": "Pengumuman",
+          "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Engineering at Bukalapak",
+      "url": "http://komunitas.staging.vm:5000/s/gaskpc/engineering_at_bukalapak",
+      "created_at": "2016-08-11T13:40:44.000+07:00",
+      "updated_at": "2016-08-11T14:47:56.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 16,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 0
+      },
+      "tags": [
+        {
+          "tag": "Komputer",
+          "description": "Berbagi seputar dunia komputer, laptop, dan turunannya."
+        },
+        {
           "tag": "Video",
-          "description": "Bukan XXX"
+          "description": "Video terkait Bukalapak.com"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "title": "lingling",
+      "url": "http://komunitas.staging.vm:5000/s/sxa5e6/lingling",
+      "created_at": "2016-08-11T11:53:43.000+07:00",
+      "updated_at": "2016-08-11T14:48:26.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 2,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "juliosavigny",
+        "id": 517,
+        "karma": 0
+      },
+      "tags": [
+        {
+          "tag": "Ide & Masalah Fitur",
+          "description": "Sampaikan bug/error"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Quinsy Cantik Sekali",
+      "url": "http://komunitas.staging.vm:5000/s/mimrhv/quinsy_cantik_sekali",
+      "created_at": "2016-08-11T11:37:22.000+07:00",
+      "updated_at": "2016-08-11T11:37:22.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 17,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "quinsythecat",
+        "id": 519,
+        "karma": 0
+      },
+      "tags": [
+        {
+          "tag": "Inspirasi Wirausaha",
+          "description": "Cerita, pengalaman, atau artikel yang memotivasi dan menginspirasi kita semua"
+        },
+        {
+          "tag": "Tips & Trik Jualan",
+          "description": "Tips & Trik Jualan Online"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Nested",
+      "url": "http://komunitas.staging.vm:5000/s/2w9grl/nested",
+      "created_at": "2016-08-11T11:30:09.000+07:00",
+      "updated_at": "2016-08-11T13:23:50.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Ide & Masalah Fitur",
+          "description": "Sampaikan bug/error"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Emoji test",
+      "url": "http://komunitas.staging.vm:5000/s/rxnb15/emoji_test",
+      "created_at": "2016-08-11T11:04:24.000+07:00",
+      "updated_at": "2016-08-11T11:04:24.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": false,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Ide & Masalah Fitur",
+          "description": "Sampaikan bug/error"
+        }
+      ]
+    }
+  ],
+  "sticky_topics": [
+    {
+      "id": 19,
+      "title": "Masih Ada Aja Pembeli Yang Marah-Marah di Forum Komunitas Gara-Gara Barang Belum Nyampai",
+      "url": "http://komunitas.staging.vm:5000/s/qxeavi/masih_ada_aja_pembeli_yang_marah-marah_di_forum_komunitas_gara-gara_barang_belum_nyampai",
+      "created_at": "2016-08-11T10:04:46.000+07:00",
+      "updated_at": "2016-08-12T08:41:14.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 2,
+      "is_sticky": true,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "jsavigny",
+        "id": 514,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Berita",
+          "description": "Berbagi informasi terbaru yang sedang hangat-hangatnya"
+        },
+        {
+          "tag": "Inspirasi Wirausaha",
+          "description": "Cerita, pengalaman, atau artikel yang memotivasi dan menginspirasi kita semua"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Ini Dia Pemenang Kontes Menulis Serunya Kopdar Bareng Komunitas Bukalapak (Periode Juli)",
+      "url": "http://komunitas.staging.vm:5000/s/q2sran/ini_dia_pemenang_kontes_menulis_serunya_kopdar_bareng_komunitas_bukalapak_periode_juli",
+      "created_at": "2016-08-11T10:00:10.000+07:00",
+      "updated_at": "2016-08-11T10:00:57.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 1,
+      "is_sticky": true,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Jawara Kontes Menulis Tips & Trik Jualan - Periode 1-7 Agustus 2016",
+      "url": "http://komunitas.staging.vm:5000/s/osbtna/jawara_kontes_menulis_tips_trik_jualan_-_periode_1-7_agustus_2016",
+      "created_at": "2016-08-11T09:59:12.000+07:00",
+      "updated_at": "2016-08-11T09:59:16.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": true,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Pengumuman",
+          "description": "Pengumuman dan pemberitahuan resmi dari tim Bukalapak"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "[Undangan] Kopdar BL Komunitas Palembang. BEDAH LAPAK: KIAT KIAT MEMAKSIMALKAN LAPAK ANDA",
+      "url": "http://komunitas.staging.vm:5000/s/aeezfl/undangan_kopdar_bl_komunitas_palembang_bedah_lapak_kiat_kiat_memaksimalkan_lapak_anda",
+      "created_at": "2016-08-11T09:58:35.000+07:00",
+      "updated_at": "2016-08-11T09:58:37.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": true,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Berita",
+          "description": "Berbagi informasi terbaru yang sedang hangat-hangatnya"
+        },
+        {
+          "tag": "Event",
+          "description": "tentang event komunitas Bukalapak"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Riwayat Pemotongan Budget Promoted Push Tidak Informatif?",
+      "url": "http://komunitas.staging.vm:5000/s/joiihe/riwayat_pemotongan_budget_promoted_push_tidak_informatif",
+      "created_at": "2016-08-11T09:57:31.000+07:00",
+      "updated_at": "2016-08-11T09:57:34.000+07:00",
+      "upvotes": 1,
+      "downvotes": 0,
+      "vote": null,
+      "comments_count": 0,
+      "is_sticky": true,
+      "is_editable": false,
+      "is_gone": false,
+      "is_undeletable": false,
+      "user": {
+        "username": "ragapinilih",
+        "id": 1,
+        "karma": 2
+      },
+      "tags": [
+        {
+          "tag": "Tips & Trik Jualan",
+          "description": "Tips & Trik Jualan Online"
         }
       ]
     }
