@@ -482,6 +482,14 @@ curl "http://api.bukalapak.com/komunitas/topics/15"
 
 This endpoint retrieves a specific detailed topic, with its level 0 comments (comment that does not have parent).
 
+<aside class="notice">vote and can_downvote attribute is determined by the Authentication
+if vote = -1, the user has already downvoted,
+if vote = 1, the user has already upvoted,
+if vote = null, the user hasn't voted yet
+if vote = 0, then the topic is hidden from the user.</aside>
+
+if can_downvote is true, then the user can downvote the post,
+else, hide the downvote arrow
 
 ### HTTP Request
 
