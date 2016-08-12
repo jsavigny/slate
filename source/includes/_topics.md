@@ -486,7 +486,7 @@ This endpoint retrieves a specific detailed topic, with its level 0 comments (co
 
 <aside class="notice">if vote = -1, the user has already downvoted,
 if vote = 1, the user has already upvoted,
-if vote = null, the user hasn't voted yet
+if vote = null, the user hasn't voted yet,
 if vote = 0, then the topic is hidden from the user.</aside>
 
 <aside class="notice">if can_downvote is true, then the user can downvote the post,
