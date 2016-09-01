@@ -1346,7 +1346,7 @@ A topic can be undeleted by moderators/admins if the topic is gone (deleted)
 <blockquote>
 <p>Sample Request</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="no">POST</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">sticky</span>
+<pre class="highlight ruby"><code><span class="no">PATCH</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">topics</span><span class="o">/</span><span class="mi">1</span><span class="o">/</span><span class="n">sticky</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 <span class="no">Authorization</span><span class="p">:</span> <span class="no">Basic</span> <span class="n">user_id</span><span class="ss">:api_token</span>
 </code></pre>
@@ -2695,14 +2695,18 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 
+<blockquote>
 <p>OR</p>
+</blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="mi">2</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 <pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/juliosavigny"</span>
 </code></pre>
 
+<blockquote>
 <p>OR</p>
+</blockquote>
 <pre class="highlight shell"><code>curl <span class="s2">"http://api.bukalapak.com/komunitas/users/2"</span>
 </code></pre>
 
@@ -2745,7 +2749,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 
 <p><code class="prettyprint">GET http://api.local.host/komunitas/users/:id</code></p>
 
+<blockquote>
 <p>OR</p>
+</blockquote>
 
 <p><code class="prettyprint">GET http://api.local.host/komunitas/users/:username</code></p>
 
@@ -2779,7 +2785,9 @@ A comment can be undeleted if the comment is gone (deleted) by the author of the
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
 
+<blockquote>
 <p>OR</p>
+</blockquote>
 <pre class="highlight ruby"><code><span class="no">GET</span> <span class="n">komunitas</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">jsavigny</span><span class="o">/</span><span class="n">topics?</span><span class="o">&amp;</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span>
 <span class="no">Host</span><span class="p">:</span> <span class="n">api</span><span class="p">.</span><span class="nf">bukalapak</span><span class="p">.</span><span class="nf">com</span>
 </code></pre>
