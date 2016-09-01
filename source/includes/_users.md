@@ -9,7 +9,7 @@ GET komunitas/users/juliosavigny
 Host: api.bukalapak.com
 ```
 
-OR
+> OR
 
 ```ruby
 GET komunitas/users/2
@@ -20,7 +20,7 @@ Host: api.bukalapak.com
 curl "http://api.bukalapak.com/komunitas/users/juliosavigny"
 ```
 
-OR
+> OR
 
 ```shell
 curl "http://api.bukalapak.com/komunitas/users/2"
@@ -67,7 +67,7 @@ This endpoint retrieves user profile.
 
 `GET http://api.local.host/komunitas/users/:id `
 
-OR
+> OR
 
 `GET http://api.local.host/komunitas/users/:username `
 
@@ -87,7 +87,7 @@ GET komunitas/users/1/topics?&page=1
 Host: api.bukalapak.com
 ```
 
-OR
+> OR
 
 ```ruby
 GET komunitas/users/jsavigny/topics?&page=1

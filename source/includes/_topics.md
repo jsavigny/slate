@@ -1088,7 +1088,7 @@ Parameter |        |Description
 > Sample Request
 
 ```ruby
-POST komunitas/topics/1/sticky
+PATCH komunitas/topics/1/sticky
 Host: api.bukalapak.com
 Authorization: Basic user_id:api_token
 ```
